@@ -45,12 +45,14 @@
     <footer role="contentinfo">
       
     </footer>
-    <%#= javascript_include_tag 'factorfree' %>
+    <%#= javascript_include_tag 'tactile' %>
     <% if content_for?(:javascript) %>
       <script>
       <%= yield_content :javascript %>
       </script>
     <% end %>
+    <% if ApplicationConfig::GoogleAnalytics %>
     <%= partial "partials/google_analytics" %>
+    <% end %>
   </body>
 </html>
