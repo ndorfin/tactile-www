@@ -1,0 +1,9 @@
+@import "_mixins";
+@import "_vars";
+
+/* General (Lowest specificity) *
+ * ============================ */
+a {color:$colour_link; text-decoration:none;
+  &:hover {text-decoration:underline;}
+}
+

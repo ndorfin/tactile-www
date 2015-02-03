@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      tactile
+      <% if current_page.data.page_title %>
+       - <%= current_page.data.page_title %>
+      <% end %>
+    </title>
+    <% if current_page.data.description %>
+    <meta name="description" content="<%= current_page.data.description %>">
+    <% end %>
+    <% if current_page.data.page_class == 'homepage' %>
+    <%= inline_stylesheet '_homepage' %>
+    <% else %>
+    <%= stylesheet_link_tag 'tactile' %>
+    <% end %>
+  </head>
+  <body id="body"<% if current_page.data.page_class %> class="<%= current_page.data.page_class %>"<% end %>>
+    <header role="banner">
+      <h1><a href="/">tactile</a></h1>
+      <nav class="a11y">
+        <ul>
+          <li><a href="#menu" accesskey="m">Skip to Navigation (Accesskey: M)</a></li>
+          <li><a href="#body" accesskey="t">Skip to Top (Accesskey: T)</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <header>
+        <% if current_page.data.page_title %>
+        <h1><%= current_page.data.page_title %></h1>
+        <% end %>
+      </header>
+      <% if content_for?(:page_navigation) %>
+      <nav id="page_bookmarks">
+        <%= yield_content :page_navigation %>
+      </nav>
+      <% end %>
+      <%= yield %>
+    </main>
+    <footer role="contentinfo">
+      
+    </footer>
+    <%#= javascript_include_tag 'factorfree' %>
+    <% if content_for?(:javascript) %>
+      <script>
+      <%= yield_content :javascript %>
+      </script>
+    <% end %>
+    <%= partial "partials/google_analytics" %>
+  </body>
+</html>

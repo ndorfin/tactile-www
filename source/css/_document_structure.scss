@@ -1,0 +1,5 @@
+@import "_mixins";
+@import "_vars";
+
+html {-webkit-font-smoothing:subpixel-antialiased;}
+  body {font:16px/1.5 $font-family; margin:0; padding:0; color:#555; background-color:#fff;}
