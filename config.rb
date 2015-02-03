@@ -1,3 +1,5 @@
+env_name = ENV['APP_ENV'] || 'development'
+require "config/environments/#{env_name}"
 require 'helpers/asset_helpers'
 
 # Reload the browser automatically whenever files change
