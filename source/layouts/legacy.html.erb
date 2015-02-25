@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>tactile.co.za</title>
+    <%= stylesheet_link_tag 'legacy' %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1 class="tk-raleway"><a href="http://tactile.co.za/blog">tactile</a></h1>
+        <h2 class="tk-raleway">- thoughts on CSS, UIs and UX.</h2>
+      </header>
+      <nav>
+        <ul class="tk-raleway">
+          <li class="page_item page-item-2"><a href="http://tactile.co.za/blog/about/">About</a></li>
+          <li><a href="http://tactile.co.za/blog/feed/">RSS</a></li>
+        </ul>
+      </nav>
+      <div id="content">
+        <article class="post">
+          <h1 class="tk-raleway"><a href="<%= current_page.url %>"><%= current_page.data.page_title %></a></h1>
+          <small><b>Posted:</b> <%= current_page.data.published_date %> <b>Author:</b> <a href="http://tactile.co.za/about/">Shaun</a></small>
+          <%= yield %>
+        </article>
+      </div>
+    </div>
+    <% if ApplicationConfig.const_defined?(:GoogleAnalytics) %>
+    <%= partial "partials/google_analytics" %>
+    <% end %>
+  </body>
+</html>

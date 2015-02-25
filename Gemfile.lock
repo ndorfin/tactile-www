@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/ndorfin/middleman-syntax.git
+  revision: 0bc06bf2032c88c411d39e4bf1e649f16d9ddc93
+  specs:
+    middleman-syntax (2.0.0)
+      middleman-core (~> 3.2)
+      rouge (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -92,9 +100,6 @@ GEM
       sprockets (~> 2.12.1)
       sprockets-helpers (~> 1.1.0)
       sprockets-sass (~> 1.2.0)
-    middleman-syntax (2.0.0)
-      middleman-core (~> 3.2)
-      rouge (~> 1.0)
     minitest (5.5.0)
     multi_json (1.10.1)
     net-sftp (2.1.2)
@@ -115,7 +120,7 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    rouge (1.7.7)
+    rouge (1.8.0)
     sass (3.4.9)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -148,4 +153,4 @@ DEPENDENCIES
   middleman-deploy
   middleman-livereload
   middleman-minify-html
-  middleman-syntax
+  middleman-syntax!

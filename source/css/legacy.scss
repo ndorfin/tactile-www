@@ -1,0 +1,87 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; background-color:transparent;}
+:focus {outline:0;}
+body {line-height:1; color:black; background:transparent;}
+ol, ul {list-style:none;}
+table {border-collapse:separate; border-spacing:0;}
+caption, th, td {text-align:left; font-weight:normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+
+header, nav, article, footer {display:block;}
+
+body {font:13px/1.7em Helvetica, Arial, serif; background:#eee; color:#666;}
+a:link {text-decoration:none; color:#c33;}
+a:visited {color:#a66;}
+a:hover {color:#e00;}
+hr {display:none}
+
+#wrapper {width:860px; position:relative; margin:20px auto; padding:20px; background:#fff; -moz-box-shadow:2px 2px 10px rgba(0,0,0,.2); -webkit-box-shadow:2px 2px 10px rgba(0,0,0,.2); box-shadow:2px 2px 10px rgba(0,0,0,.2); -webkit-border-radius:15px 0; -moz-border-radius:15px 0; border-radius:15px 0;}
+    /* header {} */
+        header h1 {font-size:60px; font-weight:normal; line-height:1}
+            header h1 a:link,
+            header h1 a:visited {color:#ff2b06; text-decoration:none;}
+        header h2 {color:#555; font-size:28px; line-height:1; font-weight:normal; margin:0 0 20px 40px;}
+    nav {position:absolute; top:20px; right:20px;}
+        nav ul {float:right;}
+            nav li {text-align:center; float:left; display:inline; width:auto;}
+                nav li a {font-size:28px; font-weight:400; display:block; padding:5px; border-bottom:none; text-transform:lowercase; margin-left:10px;}
+                nav li a:hover {background-color:#f7f7f7;}
+                nav li:first-child a {margin-left:0;}
+
+    #content {clear:both; min-height:420px;}
+
+        article {padding:20px 40px 30px; border-top:#f5f5f5 solid 2px}
+            article p {margin:14px 0 14px 0;}
+            article em {font-style:italic;}
+            article h2 {font:normal normal 24px/1.7em Helvetica, Tahoma, sans-serif; margin:25px 0 10px 0;}
+            article > h1 {margin:20px 0 0; font-size:40px; line-height:1}
+                article > h1 a {font-weight:normal; color:#000; letter-spacing:-0.01em;}
+                article > h1 a:hover {color:#e00}
+            article h3,
+            article h4 {font:normal normal 20px/1.7em Helvetica, Tahoma, sans-serif; margin:15px 0 10px 0;}
+            article h4 {font-size:18px;}
+            article .indent {padding-left:10px;}
+                article .indent p {padding-left:10px;}
+            article > small {font-size:11px; -moz-opacity:.7; opacity:.7;}
+            article .alignright {float:right; margin-left:10px;}
+            article .alignleft {float:left; margin-right:10px;}
+            article .aligncenter {margin:0; display:block;}
+            article abbr {font-weight:normal;}
+            article ul {list-style:circle; margin:0 0 0 25px;}
+            article ol {list-style:decimal; margin:0 0 0 30px;}
+            article .wp-caption {background:#f7f7f7; border:1px solid #ccc; margin:10px; text-align:center; padding:5px 0 0;}
+            article .wp-caption-text {margin:0;}
+                article .wp-caption a,
+                article .wp-caption a:hover {border-bottom:0;}
+            article blockquote {color:#777; border-left:5px solid #ccc; margin:15px 30px 0 10px; padding-left:20px;}
+            article pre {font-family:courier; font-size:12px; letter-spacing:-1px; margin:14px 0 14px 0;}
+            article .message {display:none; background:#0F67A1; margin-top:10px; padding:20px; color:#fff;}
+                article .message ul {margin:12px 0 0;}
+            article .syntaxhighlighter {-moz-box-shadow:inset 1px 1px 5px rgba(0,0,0,0.2); -webkit-box-shadow:inset 1px 1px 5px rgba(0,0,0,0.2); box-shadow:inset 1px 1px 5px rgba(0,0,0,0.2); padding:10px; background:#f5f5f5;}
+
+    #uncomments {padding:0 40px}
+        #uncomments h3,
+        #uncomments h4 {font-size:24px; margin:35px 0 5px; font-weight:normal;}
+        #uncomments h4 {font-size:28px;}
+        #uncomments cite {font-weight:normal; border-bottom:1px dotted #ccc;}
+        #uncomments em {font-style:italic; text-align:right;}
+        #uncomments ol.commentlist li {margin-top:20px; border:1px dotted #ccc; border-right:0; padding:10px 5px 20px 10px; min-height:110px;}
+        #uncomments p {margin:10px 0 0 10px; width:auto;}
+        #uncomments span {display:block; color:#eee; font-family:Georgia; font-size:120px; font-weight:normal; float:right; padding-top:25px;}
+        #uncomments ul.formlist {margin:20px auto; width:375px;}
+            #uncomments ul.formlist li {display:block; margin:10px 0 0;}
+                #uncomments ul.formlist p {margin:10px 0 0; text-align:center;}
+        #uncomments input {font-family:Georgia; width:370px; font-size:18px; font-weight:normal;}
+        #uncomments textarea {font-family:Georgia; width:370px; font-size:18px; font-weight:normal;}
+        #uncomments li.submitbutton input {text-align:center; background:#fff; border:1px solid #aaa; color:#000; font-family:Georgia; font-weight:normal; font-size:20px; width:374px;}
+        #uncomments .center {text-align:center;}
+
+    footer {clear:left; padding:0 0 10px 0;}

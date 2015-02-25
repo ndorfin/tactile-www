@@ -7,12 +7,16 @@ configure :development do
   activate :livereload
 end
 
+set :env_name, env_name
+
 set :font_dir, 'fonts'
 set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'img'
 
 set :url_root, ApplicationConfig::BASE_URL
+
+page '/blog/*', :layout => 'legacy'
 
 activate :directory_indexes
 activate :gzip
