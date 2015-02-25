@@ -16,17 +16,23 @@ set :images_dir, 'img'
 
 set :url_root, ApplicationConfig::BASE_URL
 
-page '/blog/*', :layout => 'legacy'
-
-activate :directory_indexes
-activate :gzip
+page '/blog/*', layout: 'legacy'
+page '/feed.xml', layout: false
 
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', 'Explorer >= 9']
   config.cascade  = false
 end
 
+activate :blog do |blog|
+  blog.prefix = 'blog'
+  blog.permalink = '{year}/{title}'
+  blog.default_extension = '.html.erb'
+end
+
 activate :syntax, :line_numbers => true
+activate :directory_indexes
+activate :gzip
 
 # Build-specific configuration
 configure :build do

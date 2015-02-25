@@ -1,14 +1,6 @@
----
-page_class: 'homepage'
-description: 'tactile is the personal website and blog of Shaun O’Connell or @ndorfin'
----
-
-<h1>Hello world</h1>
-<p><a href="/blog">Blog</a></p>
 <h2>Recent Articles</h2>
 <ol>
   <% blog.articles[0...10].each do |article| %>
   <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
   <% end %>
 </ol>
-
