@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>tactile.co.za</title>
+    <title><% if current_article %><%= current_article.title %><%else%>Blog index<%end%> - tactile.co.za</title>
     <%= stylesheet_link_tag 'legacy' %>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
   <body>
     <div id="wrapper">
       <header>
-        <h1 class="tk-raleway"><a href="http://tactile.co.za/blog">tactile</a></h1>
-        <h2 class="tk-raleway">- thoughts on CSS, UIs and UX.</h2>
+        <h1><a href="/blog">tactile</a></h1>
+        <h2>- thoughts on CSS, UIs and UX.</h2>
       </header>
       <nav>
-        <ul class="tk-raleway">
-          <li class="page_item page-item-2"><a href="http://tactile.co.za/blog/about/">About</a></li>
-          <li><a href="http://tactile.co.za/blog/feed/">RSS</a></li>
+        <ul>
+          <!--li><a href="/about/">About</a></li-->
+          <li><a href="<%= "#{blog.options.prefix.to_s}/feed.xml" %>">RSS</a></li>
         </ul>
       </nav>
       <div id="content">
+        <% if current_article %>
         <article class="post">
-          <h1 class="tk-raleway"><a href="<%= current_page.url %>"><%= current_page.data.page_title %></a></h1>
-          <small><b>Posted:</b> <%= current_page.data.published_date %> <b>Author:</b> <a href="http://tactile.co.za/about/">Shaun</a></small>
+          <h1><a href="<%= current_article.url %>"><%= current_article.title %></a></h1>
+          <small>
+            <b>Posted:</b> <%= current_article.date.strftime('%B %e, %Y') %>
+            <b>Author:</b> <a href="http://tactile.co.za/about/">Shaun</a>
+          </small>
           <%= yield %>
         </article>
+        <% else %>
+        <article>
+          <%= yield %>
+        </article>
+        <% end %>
       </div>
     </div>
     <% if ApplicationConfig.const_defined?(:GoogleAnalytics) %>

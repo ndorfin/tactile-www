@@ -1,9 +1,9 @@
 ---
 title: Progressive enhancement by adding classes
+tags: javascript, best-practices
 ---
 
 <p>Progressive enhancement is a Front-end Development practice that ensures your clients can still operate a webpage without (for instance) JavaScript support.<br>JS-driven widgets typically have styling applied, so it’s important to only add those styles if JavaScript is supported.  One of the better ways to do this is by adding the relevant classes via JavaScript, but leaving the control of these classes in the HTML.  Let me explain…</p>
-<p><span id="more-309"></span></p>
 
 <h3>The No-JavaScript-Scenario</h3>
 <p>
@@ -67,7 +67,7 @@ $(document).ready(function(){
 <% end %>
 
 <h3>A working example</h3>
-<p>Accordions are a perfect example of this approach. Accordions need to display all their information if JS is not available, and we only want the toggling behaviour to be added later. <a href="http://codepen.io/ndorfin/full/gsABf">See my example on codepen.io</a>.</p>
+<p>Accordions are a perfect example of this approach. Accordions need to display all their information if JS is not available, and we only want the toggling behaviour to be added later. <a href="http://codepen.io/ndorfin/pen/gsABf">See my example on codepen.io</a>.</p>
 
 <h3>Wrapping up</h3>
 <p>This is a great platform for further interaction enrichment. We’re leaving the styling up to the CSS, content and basic content styling in the hands of the HTML and then enriching the whole experience with JavaScript (if the browser supports it).  We could make some further enhancements in the CSS such as by adding hardware-accelerated animations using <code>transitions</code>.</p>
