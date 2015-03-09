@@ -1,0 +1,132 @@
+---
+title: A checklist for common front-end needs
+tags: best-practices
+---
+<p>After building the front-end on a number of web apps, I’ve noticed there are a number of common functions or helpers each web app needs for Front-end development purposes.</p>
+<p>Some tasks are trivial to solve, by virtue of being included in some web app frameworks, others are repeat offenders that you find yourself building for each and every web app.</p>
+
+<section>
+  <h2>App-wide needs</h2>
+
+  <h3>The web app should set a default language code</h3>
+<% code('html') do %>
+<html lang="en">
+<% end %>
+  <p>This acts as the basis for an <abbr title="internationalisation">i18n</abbr> setup.  It’s also good to set defaults.</p>
+
+  <h3>The <code>&lt;title&gt;</code> element should include a basic information hierarchy</h3>
+<% code('html') do %>
+<title>Page name or title [| Section name] | site name</title>
+<% end %>
+  <p>This is more meaningful and allows for better history backtracking. It’s also better for SEO.</p>
+
+  <h3>The core CSS file should be included on every page</h3>
+<% code('html') do %>
+<link rel="stylesheet" href="core.css">
+<% end %>
+  <p>Emphasis on <em>file</em>. You should be bundling all your reusable CSS files into one file at build-time. This CSS file should be included in the <code>&lt;head&gt;</code> element on every page.</p>
+  <ins>
+    <p>That is of course if you're inlining the CSS for performance reasons.</p>
+  </ins>
+
+  <h3>The core JavaScript file should be included at the bottom of every page</h3>
+<% code('html') do %>
+<script src="core.js"></script>
+<% end %>
+  <p>Emphasis on <em>file</em>. You should be bundling all your reusable script files into one file at build-time. This script file should be included at the bottom of every page, before the closing <code>&lt;/body&gt;</code> element.</p>
+</section>
+
+<section>
+  <h2>Section or context-specific needs</h2>
+
+  <h3>The web app should specify what business objects are used in the page context, or indicate the section of the site</h3>
+<% code('html') do %>
+<html class="obj_1_name obj_2_name section_name">
+<% end %>
+  <p>This is useful for section-specific style overrides, where the styles in one section are distinct from those in another.</p>
+
+  <h3>A user or layout-context CSS file should be included on every page that uses that context or layout</h3>
+<% code('html') do %>
+<link rel="stylesheet" href="guest.css">
+<% end %>
+  <p>Most of our CSS should be wrapped up in the core CSS file, but sometimes you’ll want to include an extra block of styles because the layout or styling is unique.  A good example of this is the split between being a guest user vs. an authenticated user.  Guest users will see marketing related content.  Authenticated users would see app-specific styles.</p>
+
+  <h3>A page or section of the web app should be able to add its own specific script file</h3>
+<% code('erb') do %>
+<%% Footer script block %>
+<script src="home.js"></script>
+<%% end Footer script block %>
+<% end %>
+  <p>The core scripts should not be overloaded with page or section-specific scripts.  Since the core script will be cached, the impact of this additional script should be negligible.</p>
+
+  <h3>A page or section of the web app should be able to add its own specific CSS file</h3>
+<% code('erb') do %>
+<%% Head link block %>
+<link rel="stylesheet" href="page_home.css">
+<%% end Head link block %>
+<% end %>
+  <p>Likewise with page-specific scripts, the front-end developer should be able to add CSS for sections or pages within the app.  This will keep the core CSS file down in terms of size.</p>
+
+  <h3>A page or section should be able to set its related page or section nav item to ‘active’</h3>
+<% code('html') do %>
+<nav>
+  <ul>
+    <li class="active"><a href="/">Home</a></li>
+    ...
+  </ul>
+</nav>
+<% end %>
+  <p>This is one of two ways to set active nav-items. The other is to use the page_slug ID and match it to an ID for each nav-item. There will be some circumstances where it would be better to set a class on the active nav-item, so your web app should provide this.</p>
+</section>
+
+<section>
+  <h2>Page-specific needs</h2>
+
+  <h3>The page name should be added as an ID value to the root node</h3>
+<% code('html') do %>
+<html id="page_slug">
+<% end %>
+  <p>This gives a CSS author the ability to set page-specific style rules or exceptions to the style rules</p>
+
+  <del>
+  <h3>Set page-specific keywords</h3>
+<% code('html') do %>
+<meta name="keywords" content="[keywords]">
+<% end %>
+  <p>This will allow for better search indexing</p>
+  </del>
+
+  <h3>Each page should have a page title in the header of the page content</h3>
+<% code('html') do %>
+<article>
+  <header>
+    <h1>Page title</h1>
+  </header>
+  ...
+</article>
+<% end %>
+  <p>This gives the document a good structural outline, some extra elements to use for styling and helps with SEO.</p>
+</section>
+
+<section>
+  <h2>Content-specific needs</h2>
+
+  <h3>If you’re building an ecommerce app, you should mark-up all prices consistently</h3>
+<% code('html') do %>
+<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+  ...
+  <b itemprop="price">
+    <span itemprop="priceCurrency">ZAR</span>
+    <abbr title="Rands">R</abbr>&nbsp;4<span class="separator">,</span>999<span class="decimal_point">.</span><span class="cents">99</span>
+  </b>
+  ...
+</div>
+<% end %>
+  <p>Not only does this help with styling flexibility, but also better semantic use.  The snippet above uses schema.org microdata.</p>
+</section>
+<section>
+  <h2>Conclusion</h2>
+  <p>I’ll add more as I think of them, but hopefully this should cover most of the Front-end Developer’s needs.</p>
+  <p>I think we’re in for some exciting times when we throw CSS precompilers such as Sass and LESS into the mix. This setup is all about modularising the UI based on information and technical architectures, something that the precompilers are built for.<br>
+  Still, this is uncharted territory. What’s your experience? What do you have to rebuild each and every time?</p>
+</section>
