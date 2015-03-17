@@ -1,0 +1,44 @@
+---
+title: Video is dumb
+---
+
+<p>The more I think about the aspects that make the web great, the more I wish they could be applied to video.<br>Video, in the traditional sense, is dumb.  It’s a single-direction, force-fed slop of visual and auditory data that can only really be processed by humans.</p>
+<p><img src="/img/blog/garbled_video.jpg" alt="Video is dumb"></p>
+<p>When I think about what we’re seeing and therefore visually processing, I think about our ability to identify and provide context to most artifacts we see. We can distinguish between one visual element and another. Our hearing processors can break apart certain sounds and place them in an approximate position in 3D space.  And when things in our field of view move we have time and space in play.<br>Why can’t video be like that? How can we make video intelligible to machines without replicating human-like processors in machines? These questions have been bothering me for a while, so I finally decided to start jotting down some answers and observations.</p>
+
+<section>
+  <h2>Video as object markup</h2>
+  <p>Imagine there were layers in a video, each layer could represent ‘objects’ in the video.  These objects could be visual, such as the cat object moving towards a laser pointer object.<br>
+  Yet more objects could be, for instance, the sounds in the video, the camera, the environment and location of the shot.<br>
+  Imagine you could interrogate this video as you would an API.<br>
+  As a user you could hover over the visual elements, target an object and gain more information about the target.</p>
+</section>
+
+<section>
+  <h2>What about SVG as intelligent video?</h2>
+  <p>When SVG was gaining early ground in the early 21st century, I was eagerly downloading Adobe SVG plugins for IE and testing out some of SVGs purported capabilities. One such capability was the modification of the SVG DOM via JavaScript.  One could basically animate an SVG by manipulating it, creating complex fractals or the more mundane transforms that CSS3 allows these days such as this rolling football:<br>
+  <img src="/img/blog/soccer_ball_animated.svg" alt="Animated SVG football"><br>(If you can’t see the <a href="http://en.wikipedia.org/wiki/SVG_animation">wikipedia SVG</a> above, upgrade your browser already!)
+  </p>
+</section>
+
+<section>
+  <h2>Image formats and a little magic</h2>
+  <p>Videos are basically the complex blending of still images.  But what if we could break up a video into component layers and then animate a set of them?  What if these layers could use blended transparency and be overlapped?</p>
+  <p>Recently I noticed a few posts and tweets about using image formats, JSON and a little JavaScript to make more ‘interactive’ playbacks. First Apple’s <a href="http://www.apple.com/iphone/design">new iPhone 5 design page</a> featured <a href="https://docs.google.com/document/pub?id=1GWTMLjqQsQS45FWwqNG9ztQTdGF48hQYpjQHR_d1WsI">some nifty animation tricks</a>, then John Skinner’s <a href="http://www.sublimetext.com/~jps/animated_gifs_the_hard_way.html">article about the sublimetext.com animations</a> cropped up. It’s a step in the right direction too.</p>
+</section>
+
+<section>
+  <h2>Youtube’s recent endeavours in video markup</h2>
+  <p>Youtube has been making great moves towards more intelligent video – we’re seeing annotations, subtitles and simple interactivity but I feel like it’s not there, it’s still a one-way conversation where I’m forced to listen, at a set pace, and therefore not interact with or influence my experience.</p>
+</section>
+
+<section>
+  <h2>What about user controls?</h2>
+  <p>Simple play, pause and skip controls aren’t where we should stop in terms of innovation.  Choosing a separate audio stream, playback speed, switching on markup should be all be standard options available to us.</p>
+  <p><img src="/img/blog/playback.png" alt="Video is broken to machines"></p>
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <p>Maybe my hopes are a long way off, but I feel like we’re making progress.  Maybe we’ll see Google start indexing videos, providing the lyrics to the songs you watch on Youtube or allowing you to see your search results for your favourite movie quote in the actual movie playback (at just the right marker).</p>
+</section>

@@ -1,0 +1,53 @@
+---
+title: Freed from IE6!
+---
+<p><img src="/img/blog/yola-ie6_awsm1.png" alt="yola minus IE6 equals awesome"></p>
+<p>It has been more than 8 months since <a href="http://www.yola.com">www.yola.com</a> went live with a redesign, built and designed by a small team of people here in Cape Town.<br>
+Before we started the build (after months of <a href="http://www.smashingmagazine.com/2010/06/29/why-design-by-commitee-should-die/">design by committee</a>), a simple decision was made: <strong>Let’s abandon Internet Explorer 6</strong>.  This simple decision has had a significant impact on our development and design work at Yola, all for the better.</p>
+
+<h3>The effects of IE6 on a company</h3>
+<p>IE6 affects many areas of a web development company, not just its engineers.  You’ll feel its cold, evil touch in:</p>
+<ul>
+  <li>Product and Design</li>
+  <li>Development / Engineering</li>
+  <li><abbr title="Quality Assurance">QA</abbr></li>
+  <li>…and even Customer Support.</li>
+</ul>
+<p>Let me explain…</p>
+
+<h4>The influence of IE6 on web design</h4>
+<p>Any good web designer will tell you how limiting it is having to design with IE6 in mind.  IE6 feels boxy, slow and above all else: ancient.  One of the single biggest limitations it has (from an aesthetics point-of-view) is the lack of native blended transparency support typically afforded by PNG-24.</p>
+
+<h4>IE6 adds obstacles to the QA cycle</h4>
+<p>
+  Not only do your QA engineers have to have an additional IE6-ready <acronym title="Virtual Machine">VM</acronym> (or physical machines if you’re kicking it old-school style) but so too do your developers.<br>
+  <a href="http://www.gtalbot.org/BrowserBugsSection/MSIE6Bugs/">IE6’s impressive list of 119 bugs</a> are encountered any time you, for example, use a CSS float or influence an element’s box properties.  Testing in IE6 is relatively easy, when it works, but debugging is another matter entirely.
+</p>
+
+<h4>IE6: the thorn in the side of every web developer</h4>
+<p>
+  Microsoft created the <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=95e06cbe-4940-4218-b75d-b8856fced535">Developer Toolbar</a> for IE 6 and 7 (which feels archaic compared to Firebug).  Without this toolbar, simple as it is, dev-life would be even harder working with IE.<br>
+  If you work towards Standards-based HTML and CSS development, your handiwork will look great in Standards-compliant browsers, and then completely crap in IE6 – often causing a refactoring of the CSS and HTML so that sensible IE6 fixes can be applied.<br>
+  To add to the frustration, the fixes for IE6 incompatibility are typically inconsistent and unreliable.  Take our blended transparency issue above… Developers usually get around this IE6 limitation by using png-fixes – which lead to more headaches – try using a pngfix on a blended background image with an offset background-position!
+</p>
+
+<h4>Dealing with IE6 users</h4>
+<p>Bugs do sometimes slip through to production environments, and these bugs usually occur in IE. Those poor Customer Service people have to deal with IE6 too, but primarily through its frustrated users. </p>
+
+<h3>What did we gain by dropping IE6?</h3>
+<p>I think the primary benefit for me was the reduced frustration.  IE6 is incredibly frustrating to develop for, which is a feeling so contradictory to the one accompanied by building a well-mannered website.</p>
+<p>So, a rudimentary list of benefits in dropping IE6 support:</p>
+<ul>
+  <li>Fewer design limitations allowing design work to push the envelope</li>
+  <li>All supported browsers can now use blended transparency without the need for hacks / fixes</li>
+  <li>Improved development turn-around times – less time wasted by testing and fixing IE6 bugs</li>
+  <li>Fully native CSS1, greatly improved CSS2.1 and even improved native CSS3 selector support!</li>
+  <li>Improved CSS selector support puts less strain on HTML development</li>
+  <li>One less VM for QA peeps and Engineers</li>
+  <li>One less browser officially supported by CS peeps</li>
+  <li>…and less frustration!</li>
+</ul>
+<p>Someday I’ll create a nice fat blog post on the CSS selector changes we saw.  (It makes me giddy just thinking of the impact this has had on the CSS and markup development for yola.com)</p>
+
+<h3>To conclude</h3>
+<p>Some web developers will be locked into IE6 for good, others will find it worth the effort to develop for.  All I can say now is that I’m glad we turned our back on IE6, in a way, we’re doing our part to make IE6 less of a necessity on the web.</p>
