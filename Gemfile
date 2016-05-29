@@ -9,5 +9,5 @@ gem "middleman-blog"
 
 gem "middleman-autoprefixer"
 gem "middleman-syntax"
-gem "middleman-deploy"
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 gem "builder"
