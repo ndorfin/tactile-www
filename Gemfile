@@ -4,9 +4,10 @@ source "https://rubygems.org"
 
 gem "middleman"
 gem "middleman-livereload"
-gem "middleman-autoprefixer"
 gem "middleman-minify-html"
-gem "middleman-syntax", :github => "ndorfin/middleman-syntax"
-gem "middleman-deploy"
 gem "middleman-blog"
+
+gem "middleman-autoprefixer"
+gem "middleman-syntax"
+gem "middleman-deploy"
 gem "builder"
