@@ -1,6 +1,0 @@
-<h2>Most recent articles</h2>
-<ol>
-  <% blog.articles[0..100].each do |article| %>
-  <li><%= link_to article.title, article %> <span><%= article.date.strftime('%B %e, %Y') %></span></li>
-  <% end %>
-</ol>
