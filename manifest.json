@@ -1,0 +1,32 @@
+{
+    "name": "tactile.co.za",
+    "short_name": "tactile",
+    "description": "Shaun O’Connell is a Front-end Developer and UX Person, based in Wellington, New Zealand.",
+    "background_color": "#fff",
+    "theme_color": "#966",
+    "lang": "en",
+    "display": "fullscreen",
+    "start_url": "./?utm_source=web_app_manifest",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/touch-icon-96x96.png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/touch-icon-192x192.png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/touch-icon-256x256.png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/touch-icon-512x512.png",
+            "sizes": "512x512"
+        }
+    ]
+}
