@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Shaun O'Connell, Front-end Developer and UX person</title>
+<title>Shaun O'Connell - tactile.co.za</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 html {-webkit-font-smoothing:subpixel-antialiased; font:12px/1.5 Georgia, sans-serif;}
@@ -8,8 +8,9 @@ body {font-size:1.25rem; margin:5vh 5vw; max-width:30rem; color:#966;}
 header {margin-top:15vh;}
 h1 {font-size:3rem; font-weight:600; color:#422; border-bottom:1px solid #eee;}
 abbr {text-decoration:none; border-bottom:none;}
-a {color:#b22;}
-a:hover {text-decoration:none;}
+a {color:#b22; text-decoration:none; border-bottom:rgba(187,34,34,.25) solid 1px; transition:border-color .2s;}
+a:hover {border-bottom:currentColor solid 1px;}
+.a11y {position:absolute; overflow:hidden; clip:rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;}
 @media (min-width:480px) {
 	html {font-size:16px;}
 }
@@ -23,15 +24,21 @@ a:hover {text-decoration:none;}
 	<h1>tactile.co.za
 </header>
 <main>
+	<header class="a11y">
+		<h2>About
+	</header>
 	<p>Shaun O’Connell is a Front-end Developer and <abbr title="User eXperience">UX</abb> person based in Wellington, New Zealand.
+</main>
+<footer role="contentinfo">
+	<h2 class="a11y">More info</h2>
 	<p>Find me on:
 	<ul>
-		<li>Github: <a href="https://github.com/ndorfin">ndorfin</a>
-		<li>CodePen: <a href="https://codepen.io/ndorfin">ndorfin</a>
-		<li>Twitter: <a href="https://twitter.com/ndorfin">@ndorfin</a>
-		<li>LinkedIn: <a href="https://www.linkedin.com/in/ndorfin/">in/ndorfin</a>
-		<li>Quora: <a href="https://www.quora.com/profile/Shaun-OConnell">@Shaun-OConnell</a>
+		<li><a href="https://github.com/ndorfin">Github: ndorfin</a>
+		<li><a href="https://codepen.io/ndorfin">CodePen: ndorfin</a>
+		<li><a href="https://twitter.com/ndorfin">Twitter: @ndorfin</a>
+		<li><a href="https://www.linkedin.com/in/ndorfin/">LinkedIn: in/ndorfin</a>
+		<li><a href="https://www.quora.com/profile/Shaun-OConnell">Quora: @Shaun-OConnell</a>
 	</ul>
-</main>
+</footer>
 <script src="js/site.js" async></script>
 
