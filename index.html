@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
 <title>Shaun O'Connell - tactile.co.za</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-html {-webkit-font-smoothing:subpixel-antialiased; font:12px/1.5 Georgia, sans-serif;}
-body {font-size:1.25rem; margin:5vh 5vw; max-width:30rem; color:#966;}
-header {margin-top:15vh;}
+html {-webkit-font-smoothing:subpixel-antialiased; font:12px/1.5 Georgia, sans-serif; height:100%;}
+body {font-size:1.25rem; margin:5vh 5vw; color:#966; min-height:100%;}
 h1 {font-size:3rem; font-weight:600; color:#422; border-bottom:1px solid #eee;}
 abbr {text-decoration:none; border-bottom:none;}
 a {color:#b22; text-decoration:none; border-bottom:rgba(187,34,34,.25) solid 1px; transition:border-color .2s;}
@@ -15,7 +16,20 @@ a:hover {border-bottom:currentColor solid 1px;}
 	html {font-size:16px;}
 }
 @media (min-width:768px) {
-	html {font-size:18px;}
+	body {position:relative; margin:0; padding-left:17rem;}
+	body::after {content:''; width:17rem; position:absolute; top:0; bottom:0; left:0; background-color:#f5f5f5; z-index:-1; box-shadow:inset -.2rem 0 .3rem 0 rgba(0,0,0,.05)}
+	main::after {content:''; clear:both;}
+	main > header {float:left;}
+	main > header,
+	main > footer {padding:1px 1rem; max-width:15rem; margin-left:-17rem; font-size:1rem;}
+	main > footer {padding-bottom:1rem;}
+	main > header > p {font-size:inherit;}
+	article {font-size:1rem; padding:1px 3rem; background-color:#fff;}
+	article h2 {color:#822;}
+	article p,
+	article ul {font-size:inherit;}
+	main > header > h1,
+	article > header > h2 {font-size:2rem; margin-top:5rem; margin-bottom:2rem; border-bottom:1px solid rgba(0,0,0,.05);}
 }
 </style>
 <meta name="theme-color" content="#fff">
@@ -25,13 +39,25 @@ a:hover {border-bottom:currentColor solid 1px;}
 <link rel="manifest" href="/manifest.json">
 <main>
 	<header>
-		<h1>tactile.co.za
+		<h1>tactile.co.za</h1>
+		<h2 class="a11y">About</h2>
+		<p>Shaun O’Connell is a Front-end Developer and <abbr title="User eXperience">UX</abb> person based in Wellington, New Zealand.</p>
 	</header>
 	<article>
-		<header class="a11y">
-			<h2>About
+		<header>
+			<h2>I can help you with…
 		</header>
-		<p>Shaun O’Connell is a Front-end Developer and <abbr title="User eXperience">UX</abb> person based in Wellington, New Zealand.
+		<ul>
+			<li>Front-end consulting and mentoring
+			<li>Web performance optimisations
+			<li><abbr tite="Progressive web application">PWA</abbr> development
+			<li>Static site generation
+			<li>Styleguide and Pattern Library development
+			<li>Web application templating (Traditional and Client-side)
+			<li>Web master duties
+			<li>Wireframing and Interaction Design
+			<li>User research
+		</ul>
 	</article>
 	<footer role="contentinfo">
 		<h2 class="a11y">More info</h2>
