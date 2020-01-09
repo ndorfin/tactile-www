@@ -1,0 +1,13 @@
+html {-webkit-font-smoothing:subpixel-antialiased; font:12px/1.5 Georgia, sans-serif; height:100%;}
+body {font-size:1.25rem; margin:5vh 5vw; color:#966; min-height:100%;}
+h1 {font-size:3rem; font-weight:600; color:#422;}
+abbr {text-decoration:none; border-bottom:none;}
+a {color:#b22; text-decoration:none; border-bottom:rgba(187,34,34,.25) solid 1px; transition:border-color .2s;}
+a:hover {border-bottom:currentColor solid 1px;}
+.a11y {position:absolute; overflow:hidden; clip:rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;}
+figure {margin:0; max-width:100%;}
+img {max-width:100%;}
+article {max-width:50rem;}
+@media (min-width:480px) {
+  html {font-size:16px;}
+}
