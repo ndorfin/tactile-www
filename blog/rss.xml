@@ -7,50 +7,51 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
   xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 >
-<channel>
-  <title>Tactile blog</title>
-  <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
-  <link>https://tactile.co.za/blog/</link>
-  <description>Follow Shaun O'Connell's adventures in Front-end development lecturing, in the remote town of Mahanoro, Madagascar</description>
-  <lastBuildDate>Fri, 10 Jan 2020 18:00:00 +0200</lastBuildDate>
-  <language>en-NZ</language>
-  <sy:updatePeriod>daily</sy:updatePeriod>
-  <sy:updateFrequency>1</sy:updateFrequency>
-  <generator>Visual Studio Code</generator>
-  <!-- <item>
-    <title></title>
+  <channel>
+    <title>Tactile blog</title>
+    <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
-    <pubDate>Tue, 01 Jan 2020 00:00:00 GMT</pubDate>
-    <guid isPermaLink="true">https://tactile.co.za/blog/</guid>
-    <description><![CDATA[
-    ]]></description>
-  </item> -->
-  <item>
-    <title>Getting situated</title>
-    <link>https://tactile.co.za/blog/2020-01-08/getting-situated.html</link>
-    <pubDate>Wed, 08 Jan 2020 00:00:00 GMT</pubDate>
-    <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-08/getting-situated.html</guid>
-    <description><![CDATA[First day on the job, the commute, and a wonderful experience]]></description>
-  </item>
-  <item>
-    <title>The trip to Mahanoro</title>
-    <link>https://tactile.co.za/blog/2020-01-06/the-trip-to-mahanoro.html</link>
-    <pubDate>Mon, 06 Jan 2020 00:00:00 GMT</pubDate>
-    <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-06/the-trip-to-mahanoro.html</guid>
-    <description><![CDATA[It was a frightfully long, restless, and crazy bus trip to Mahanoro]]></description>
-  </item>
-  <item>
-    <title>You are now entering Madagascar</title>
-    <link>https://tactile.co.za/blog/2020-01-05/you-are-now-entering-madagascar.html</link>
-    <pubDate>Sun, 05 Jan 2020 08:00:00 GMT</pubDate>
-    <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-05/you-are-now-entering-madagascar.html</guid>
-    <description><![CDATA[Landing in Madagascar, and my first impressions]]></description>
-  </item>
-  <item>
-    <title>New beginnings</title>
-    <link>https://tactile.co.za/blog/2020-01-01/new-beginnings.html</link>
-    <pubDate>Wed, 01 Jan 2020 08:00:00 GMT</pubDate>
-    <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-01/new-beginnings.html</guid>
-    <description><![CDATA[Adventure calls. This time it's calling from Madagascar, and involves an incredible lecturing opportunity]]></description>
-  </item>
-</channel>
+    <description>Follow Shaun O'Connell's adventures in Front-end development lecturing, in the remote town of Mahanoro, Madagascar</description>
+    <lastBuildDate>Fri, 10 Jan 2020 14:00:00 GMT</lastBuildDate>
+    <language>en-NZ</language>
+    <sy:updatePeriod>daily</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <generator>Visual Studio Code</generator>
+    <!-- <item>
+      <title></title>
+      <link>https://tactile.co.za/blog/</link>
+      <pubDate>Tue, 01 Jan 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/</guid>
+      <description><![CDATA[
+      ]]></description>
+    </item> -->
+    <item>
+      <title>Getting situated</title>
+      <link>https://tactile.co.za/blog/2020-01-08/getting-situated.html</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-08/getting-situated.html</guid>
+      <description><![CDATA[First day on the job, the commute, and a wonderful experience]]></description>
+    </item>
+    <item>
+      <title>The trip to Mahanoro</title>
+      <link>https://tactile.co.za/blog/2020-01-06/the-trip-to-mahanoro.html</link>
+      <pubDate>Mon, 06 Jan 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-06/the-trip-to-mahanoro.html</guid>
+      <description><![CDATA[It was a frightfully long, restless, and crazy bus trip to Mahanoro]]></description>
+    </item>
+    <item>
+      <title>You are now entering Madagascar</title>
+      <link>https://tactile.co.za/blog/2020-01-05/you-are-now-entering-madagascar.html</link>
+      <pubDate>Sun, 05 Jan 2020 08:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-05/you-are-now-entering-madagascar.html</guid>
+      <description><![CDATA[Landing in Madagascar, and my first impressions]]></description>
+    </item>
+    <item>
+      <title>New beginnings</title>
+      <link>https://tactile.co.za/blog/2020-01-01/new-beginnings.html</link>
+      <pubDate>Wed, 01 Jan 2020 08:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-01/new-beginnings.html</guid>
+      <description><![CDATA[Adventure calls. This time it's calling from Madagascar, and involves an incredible lecturing opportunity]]></description>
+    </item>
+  </channel>
+</rss>
