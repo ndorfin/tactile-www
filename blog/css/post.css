@@ -11,3 +11,6 @@ article {max-width:50rem;}
 @media (min-width:480px) {
   html {font-size:16px;}
 }
+@media (min-width:800px) {
+  figure {max-width:60%; margin:auto;}
+}
