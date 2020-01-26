@@ -12,7 +12,7 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in Front-end development lecturing, in the remote town of Mahanoro, Madagascar</description>
-    <lastBuildDate>Thu, 23 Jan 2020 14:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2020 07:00:00 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
@@ -26,9 +26,16 @@
       ]]></description>
     </item> -->
     <item>
+      <title>Mental health</title>
+      <link>https://tactile.co.za/blog/2020-01-26/mental-health.html</link>
+      <pubDate>Sun, 26 Jan 2020 07:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-26/mental-health.html</guid>
+      <description><![CDATA[My mental health changes after uprooting]]></description>
+    </item>
+    <item>
       <title>Wildlife</title>
       <link>https://tactile.co.za/blog/2020-01-21/wildlife.html</link>
-      <pubDate>Fri, 17 Jan 2020 21:00:00 GMT</pubDate>
+      <pubDate>Tue, 21 Jan 2020 14:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-21/wildlife.html</guid>
       <description><![CDATA[Brief encounters with animals great and small]]></description>
     </item>
