@@ -12,7 +12,7 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in Front-end development lecturing, in the remote town of Mahanoro, Madagascar</description>
-    <lastBuildDate>Sun, 26 Jan 2020 07:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2020 17:00:00 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
@@ -25,6 +25,13 @@
       <description><![CDATA[
       ]]></description>
     </item> -->
+    <item>
+      <title>A brutal week</title>
+      <link>https://tactile.co.za/blog/2020-01-31/a-brutal-week.html</link>
+      <pubDate>Fri, 31 Jan 2020 17:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2020-01-31/a-brutal-week.html</guid>
+      <description><![CDATA[What goes up, must come down, right?]]></description>
+    </item>
     <item>
       <title>Mental health</title>
       <link>https://tactile.co.za/blog/2020-01-26/mental-health.html</link>
