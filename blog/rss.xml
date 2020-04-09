@@ -12,7 +12,7 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in Front-end development lecturing, in the remote town of Mahanoro, Madagascar</description>
-    <lastBuildDate>Thu, 12 Mar 2020 07:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 9 Apr 2020 07:00:00 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
@@ -25,6 +25,13 @@
       <description><![CDATA[
       ]]></description>
     </item> -->
+    <item>
+      <title>Obligatory catch-up post</title>
+      <link>https://tactile.co.za/blog/2020-04-09/obligatory-catch-up-post.html</link>
+      <pubDate>Thu, 9 Apr 2020 07:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2020-04-09/obligatory-catch-up-post.html</guid>
+      <description><![CDATA[After a month of post absence, the obligatory catch-up post presents itself.]]></description>
+    </item>
     <item>
       <title>Shaun’s “Teach HTML in 4 weeks”</title>
       <link>https://tactile.co.za/blog/2020-03-12/html-in-4-weeks.html</link>
