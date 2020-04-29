@@ -12,7 +12,7 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in Front-end development lecturing, in the remote town of Mahanoro, Madagascar</description>
-    <lastBuildDate>Thu, 9 Apr 2020 07:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 07:00:00 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
@@ -25,6 +25,13 @@
       <description><![CDATA[
       ]]></description>
     </item> -->
+    <item>
+      <title>Tea-time topics</title>
+      <link>https://tactile.co.za/blog/2020-04-29/tea-time-topics.html</link>
+      <pubDate>Wed, 29 Apr 2020 07:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2020-04-29/tea-time-topics.html</guid>
+      <description><![CDATA[I love this tradition at Onja. A chance to learn and listen.]]></description>
+    </item>
     <item>
       <title>Obligatory catch-up post</title>
       <link>https://tactile.co.za/blog/2020-04-09/obligatory-catch-up-post.html</link>
