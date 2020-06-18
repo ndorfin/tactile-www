@@ -1,0 +1,26 @@
+---
+layout: blog_index.njk
+eleventyExcludeFromCollections: true
+---
+
+{% for month in collections.postsGroupedByMonth %}
+<section>
+  <header>
+    <h3>{{ month[0] | formattedMonthYear }}</h3>
+  </header>
+  <ul>
+    {% for post in month[1] %}
+    <li>
+        <a href="{{ post | postUrl }}">{{ post.data.title }}</a>
+        <span class="a11y">Written on</span>
+        <time datetime="{{ post.data.date | dateISO }}">
+          {{ post.data.date | day }}
+          <abbr title="{{ post.data.date | month }}">
+            {{ post.data.date | mon }}
+          </abbr>
+        </time>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

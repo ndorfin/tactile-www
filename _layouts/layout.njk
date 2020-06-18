@@ -1,0 +1,25 @@
+---
+permalink: "{{ page | postUrl }}"
+---
+<!DOCTYPE html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{ title }} - Tactile Blog</title>
+    <link rel="stylesheet" href="../css/post.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="../">Tactile Blog</a></h1>
+    </header>
+    <main>
+      <article>
+        <header>
+          <h2>{{ title }}</h2>
+        </header>
+        {{ content | safe }}
+      </article>
+    </main>
+  </body>
+</html>
