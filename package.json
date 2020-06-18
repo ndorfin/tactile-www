@@ -4,6 +4,7 @@
   "description": "Blog container and builder for tactile.co.za",
   "author": "Shaun O'Connell <shaun@tactile.co.za>",
   "license": "ISC",
+  "repository": "https://github.com/ndorfin/tactile-www",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0"
   }
