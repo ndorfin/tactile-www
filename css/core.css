@@ -15,7 +15,6 @@ h1 {
   font-size: 3rem;
   font-weight: 600;
   color: #422;
-  border-bottom: 1px solid #eee;
 }
 
 abbr {
@@ -51,57 +50,3 @@ a:hover {
   }
 }
 
-@media (min-width:768px) {
-  body {
-    position: relative;
-    margin: 0;
-    padding-left: 17rem;
-  }
-  body::after {
-    content: '';
-    width: 17rem;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #f5f5f5;
-    z-index: -1;
-    box-shadow: inset -.2rem 0 .3rem 0 rgba(0, 0, 0, .05)
-  }
-  main::after {
-    content: '';
-    clear: both;
-  }
-  main>header {
-    float: left;
-  }
-  main>header, main>footer {
-    padding: 1px 1rem;
-    max-width: 15rem;
-    margin-left: -17rem;
-    font-size: 1rem;
-  }
-  main>footer {
-    padding-bottom: 1rem;
-  }
-  main>header>p {
-    font-size: inherit;
-  }
-  article {
-    font-size: 1rem;
-    padding: 1px 3rem;
-    background-color: #fff;
-  }
-  article h2 {
-    color: #822;
-  }
-  article p, article ul {
-    font-size: inherit;
-  }
-  main>header>h1, article>header>h2 {
-    font-size: 2rem;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
-  }
-}

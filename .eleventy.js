@@ -89,6 +89,10 @@ module.exports = function(eleventyConfig) {
     return getMonthYearStringFromISO(ISOYearMonth);
   });
 
+  /* Directives */
+  /* Copy files in the `_root` folder to the `_site` root */
+  eleventyConfig.addPassthroughCopy({ "_root/*": "/" });
+
   return {
     templateFormats: [
       "css",
