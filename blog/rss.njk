@@ -15,7 +15,7 @@ eleventyExcludeFromCollections: true
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
-  {%- for p in collections.sortedPosts -%}
+  {%- for p in collections.sortedPosts | reverse -%}
     {% set fullUrl = "https://tactile.co.za" + p.url %}
     <item>
       <title>{{ p.data.title }}</title>
