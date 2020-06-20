@@ -90,12 +90,16 @@ module.exports = function(eleventyConfig) {
   });
 
   /* Directives */
+
   /* Copy files in the `_root` folder to the `_site` root */
   eleventyConfig.addPassthroughCopy({ "_root/*": "/" });
 
+  /* Copy CSS and JS from the base folder to the `_site` root */
+  eleventyConfig.addPassthroughCopy({ "css/**/*": "css" });
+  eleventyConfig.addPassthroughCopy({ "js/**/*": "js" });
+
   return {
     templateFormats: [
-      "css",
       "html",
       "jpg",
     ],
