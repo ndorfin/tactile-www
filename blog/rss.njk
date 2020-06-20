@@ -1,0 +1,38 @@
+---
+permalink: "/blog/rss.xml"
+layout: ""
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
+  <channel>
+    <title>Tactile blog</title>
+    <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <link>https://tactile.co.za/blog/</link>
+    <description>Follow Shaun O'Connell's adventures in Front-end development lecturing, in the remote town of Mahanoro, Madagascar</description>
+    <lastBuildDate>Wed, 29 Apr 2020 07:00:00 GMT</lastBuildDate>
+    <language>en-NZ</language>
+    <sy:updatePeriod>daily</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <generator>@11ty/Eleventy + VS Code</generator>
+
+    {% for p in collections.sortedPosts %}
+      {% set fullUrl = "https://tactile.co.za" + p.url %}
+      <item>
+        <title>{{ p.data.title }}</title>
+        <link>{{ fullUrl }} </link>
+        <pubDate>{{ p.date }}</pubDate>
+        <guid isPermaLink="true">{{ fullUrl }}</guid>
+        <description><![CDATA[{{ p.data.summary }}]]></description>
+      </item>
+    {% endfor %}
+
+</channel>
+</rss>
