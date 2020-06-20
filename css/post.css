@@ -1,3 +1,11 @@
+main > article > header > h2 {
+  --font-size-multiplier: 2;
+}
+
+article h3 {
+  --font-size-multipluer: 1.5;
+}
+
 figure {
   margin: 0;
   max-width: 100%;
@@ -9,8 +17,8 @@ img {
 
 img.contextual {
   max-width: 50%;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 0.25rem;
+  border: 0.0625rem solid rgba(0, 0, 0, .2);
 }
 
 article {

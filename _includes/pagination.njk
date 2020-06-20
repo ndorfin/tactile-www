@@ -1,0 +1,24 @@
+<ul>
+{% for p in collections.sortedPosts %}
+  {% if p.url == page.url %}
+    {% if loop.index < loop.length %}
+      {% set nextPost = collections.sortedPosts[loop.index] %}
+      <li>
+        Next post:
+        <a rel="next" href="{{ nextPost.url }}">
+          {{ nextPost.data.title }}
+        </a>
+      </li>
+    {% endif %}
+    {% if loop.index > 1 %}
+      {% set previousPost = collections.sortedPosts[loop.index - 2] %}
+      <li>
+        Previous post:
+        <a rel="prev" href="{{ previousPost.url }}">
+          {{ previousPost.data.title }}
+        </a>
+      </li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</ul>

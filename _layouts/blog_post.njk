@@ -24,5 +24,8 @@ permalink: "{{ page | postUrl }}"
         {{ content | safe }}
       </article>
     </main>
+    <footer>
+      {% include "pagination.njk" %}
+    </footer>
   </body>
 </html>

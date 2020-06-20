@@ -33,13 +33,29 @@ function getMonthYearStringFromISO(date) {
   return formattedDate;
 }
 
+function getAllSortedPosts(collection) {
+  return collection
+      .getAll()
+      .filter(item => item.data.tag === 'post')
+      .sort((a, b) => {
+        if (a.url > b.url) {
+          return 1;
+        }
+        if (b.url > a.url) {
+          return -1;
+        }
+        return 0;
+      });
+}
+
 module.exports = function(eleventyConfig) {
 
   /* Collections */
+  eleventyConfig.addCollection('sortedPosts', getAllSortedPosts);
+
   eleventyConfig.addCollection('postsGroupedByMonth', function(collection) {
-    return collection
-      .getAll()
-      .filter(item => item.data.tag === 'post')
+
+    return getAllSortedPosts(collection)
       .reduce((groupedPostsObj, item) => {
         let key = getISOMonth(item.data.date);
         if (!groupedPostsObj[key]) {
@@ -101,6 +117,8 @@ module.exports = function(eleventyConfig) {
   return {
     templateFormats: [
       "html",
+      "jpeg",
+      "mp4",
       "jpg",
     ],
     dir: {
