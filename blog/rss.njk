@@ -4,10 +4,7 @@ layout: ""
 date: Last Modified
 eleventyExcludeFromCollections: true
 ---<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-  xmlns:atom="http://www.w3.org/2005/Atom"
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
   <channel>
     <title>Tactile blog</title>
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
@@ -18,17 +15,15 @@ eleventyExcludeFromCollections: true
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
-
-    {% for p in collections.sortedPosts %}
-      {% set fullUrl = "https://tactile.co.za" + p.url %}
-      <item>
-        <title>{{ p.data.title }}</title>
-        <link>{{ fullUrl }} </link>
-        <pubDate>{{ p.date.toUTCString() }}</pubDate>
-        <guid isPermaLink="true">{{ fullUrl }}</guid>
-        <description><![CDATA[{{ p.data.summary }}]]></description>
-      </item>
-    {% endfor %}
-
-</channel>
+  {%- for p in collections.sortedPosts -%}
+    {% set fullUrl = "https://tactile.co.za" + p.url %}
+    <item>
+      <title>{{ p.data.title }}</title>
+      <link>{{ fullUrl }} </link>
+      <pubDate>{{ p.date.toUTCString() }}</pubDate>
+      <guid isPermaLink="true">{{ fullUrl }}</guid>
+      <description><![CDATA[{{- p.data.summary | safe -}}]]></description>
+    </item>
+  {%- endfor %}
+  </channel>
 </rss>
