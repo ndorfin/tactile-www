@@ -1,15 +1,16 @@
 ---
 eleventyExcludeFromCollections: true
 ---
+{% set css %}
+  {% include "css/core.css" %}
+  {% include "css/home.css" %}
+{% endset %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <meta charset="UTF-8">
 <title>Shaun O'Connell - tactile.co.za</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  @import "css/core.css";
-  @import "css/home.css";
-</style>
+<style>{{ css | cssmin | safe }}</style>
 <meta name="theme-color" content="#fff">
 <meta name="apple-mobile-web-app-title" content="tactile.co.za">
 <meta name="apple-mobile-web-app-capable" content="yes">

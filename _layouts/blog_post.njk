@@ -1,16 +1,17 @@
 ---
 permalink: "{{ page | postUrl }}"
 ---
+{%- set css %}
+  {% include "css/core.css" %}
+  {% include "css/post.css" %}
+{% endset -%}
 <!DOCTYPE html>
 <html lang="en-ZA">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>{{ title }} - Tactile Blog</title>
-    <style>
-      @import "../../css/core.css";
-      @import "../../css/post.css";
-    </style>
+    <style>{{ css | cssmin | safe }}</style>
   </head>
   <body>
     <header>

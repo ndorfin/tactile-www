@@ -1,3 +1,5 @@
+const CleanCSS = require("clean-css");
+
 const MONTHS = [
   "January",
   "February",
@@ -67,6 +69,10 @@ module.exports = function(eleventyConfig) {
   });
 
   /* Filters */
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
+
   eleventyConfig.addFilter("postUrl", function(post) {
     let postDate = getISODate(post.date).substring(0, 10);
     let fileName = `${post.fileSlug}.html`;

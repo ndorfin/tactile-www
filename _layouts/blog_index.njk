@@ -1,24 +1,21 @@
+{%- set css %}
+  {% include "css/core.css" %}
+  {% include "css/blog_index.css" %}
+{% endset -%}
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Recent blog posts - Tactile Blog</title>
-    <style>
-      @import "../css/core.css";
-      @import "../css/blog_index.css";
-    </style>
-  </head>
-  <body>
-    <main>
-      <article>
-        <header>
-          <h1>Tactile Blog <small>- recent posts</small></h1>
-        </header>
+<html lang="en-ZA">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recent blog posts - Tactile Blog</title>
+<style>{{ css | cssmin | safe }}</style>
+<main>
+  <article>
+    <header>
+      <h1>Tactile Blog <small>- recent posts</small></h1>
+    </header>
 
-        {{ content | safe }}
+    {{ content | safe }}
 
-      </article>
-    </main>
-  </body>
-</html>
+  </article>
+</main>
+<script src="../js/site.js" async></script>
