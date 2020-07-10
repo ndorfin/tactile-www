@@ -1,0 +1,13 @@
+---
+layout: "shared.njk"
+title: "Examples of my work"
+---
+<ul>
+{% for project in work %}
+  <li>
+    <a href="{{project.id}}/">
+      {{project.title}}
+    </a>
+  </li>
+{% endfor %}
+</ul>

@@ -1,3 +1,4 @@
+const yaml = require("js-yaml");
 const CleanCSS = require("clean-css");
 
 const MONTHS = [
@@ -51,6 +52,10 @@ function getAllSortedPosts(collection) {
 }
 
 module.exports = function(eleventyConfig) {
+
+  /* Data extensions */
+  eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
   /* Collections */
   eleventyConfig.addCollection('sortedPosts', getAllSortedPosts);
@@ -127,7 +132,10 @@ module.exports = function(eleventyConfig) {
       "jpeg",
       "mp4",
       "jpg",
+      "yaml",
     ],
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
     dir: {
       includes: "_includes",
       layouts: "_layouts",

@@ -1,0 +1,17 @@
+- id: flick
+  title: The Flick Electric design system
+  description: "Together with Kah Chan, Sophie Price, Everton Fragoso, and various other friends at Flick, we built a bespoke design system that serves more than 7 front-ends."
+  responsibilities:
+    - Majority of the front-end development
+    - Team lead
+    - Development of the design system
+    - Rollout of releases
+    - Implementation of releases in the various front-ends
+    - Migration of front-ends to support our package releases
+- id: tangram
+  title: Trade Me's Tangram Angular design system
+  description: "As one of 7 CSS developers, and countless Angular devs, I helped build out patterns for Trade Me's design system: Tangram."
+  responsibilities:
+    - Angular component development and conceptualisation
+    - Component cross-browser testing
+    - Component unit testing

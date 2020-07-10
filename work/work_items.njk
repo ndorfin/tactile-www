@@ -1,0 +1,17 @@
+---
+pagination:
+    data: work
+    size: 1
+    alias: work
+permalink: "work/{{ work.id | slug }}/"
+---
+
+{{ work.description }}
+
+<h3>Responsibilities</h3>
+
+<ul>
+  {% for responsibility in work.responsibilities %}
+  <li>{{responsibility}}</li>
+  {% endfor %}
+</ul>
