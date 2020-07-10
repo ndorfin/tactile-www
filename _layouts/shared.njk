@@ -1,11 +1,26 @@
+{% set css %}
+  {% include "css/core.css" %}
+  {% for styles in additional_stylesheets %}
+    {% include styles %}
+  {% endfor %}
+{% endset %}
 <!DOCTYPE html>
 <html lang="en-ZA">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{title}} - Tactile</title>
-</head>
-<body>
-  {{ content | safe }}
-</body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>{{ css | cssmin | safe }}</style>
+<title>{{ title }} - tactile.co.za</title>
+<body class="{{section | slug}}">
+<main>
+  <header>
+    <h1>{{ section }}</h1>
+    <p><a href="{{ back.url }}">Back to the {{ back.title }} page</a></p>
+  </header>
+  <article>
+    <header>
+      <h2>{{ title }}</h2>
+    </header>
+    {{ content | safe }}
+  </article>
+</main>
+<script src="/js/site.js" async></script>

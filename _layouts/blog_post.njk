@@ -1,5 +1,6 @@
 ---
 permalink: "{{ page | postUrl }}"
+section: Blog
 ---
 {%- set css %}
   {% include "css/core.css" %}
@@ -10,12 +11,13 @@ permalink: "{{ page | postUrl }}"
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>{{ title }} - Tactile Blog</title>
+    <title>{{ title }} - Blog - tactile.co.za</title>
     <style>{{ css | cssmin | safe }}</style>
   </head>
   <body>
     <header>
-      <h1><a href="../">Tactile Blog</a></h1>
+      <h1>Blog</h1>
+      <p><a href="../">Back to Recent posts</a></p>
     </header>
     <main>
       <article>

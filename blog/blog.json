@@ -1,1 +1,4 @@
-{ "layout": "blog_post.njk" }
+{
+  "layout": "blog_post.njk",
+  "tag": "post"
+}

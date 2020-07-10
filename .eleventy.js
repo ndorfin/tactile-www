@@ -61,16 +61,23 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection('sortedPosts', getAllSortedPosts);
 
   eleventyConfig.addCollection('postsGroupedByMonth', function(collection) {
-
-    return getAllSortedPosts(collection)
-      .reduce((groupedPostsObj, item) => {
+    let groupedPosts = getAllSortedPosts(collection)
+      .reduce((groupedPostsArray, item) => {
         let key = getISOMonth(item.data.date);
-        if (!groupedPostsObj[key]) {
-          groupedPostsObj[key] = [];
+        let currentIndex = groupedPostsArray.findIndex((post) => {
+          return post.month === key;
+        });
+        if (currentIndex > -1) {
+          groupedPostsArray[currentIndex].posts.push(item);
+        } else {
+          groupedPostsArray.push({
+            month: key,
+            posts: [item]
+          });
         }
-        groupedPostsObj[key].push(item);
-        return groupedPostsObj;
-      }, {});
+        return groupedPostsArray;
+      }, []);
+    return groupedPosts;
   });
 
   /* Filters */
