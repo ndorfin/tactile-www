@@ -1,17 +1,45 @@
 - id: flick
   title: The Flick Electric design system
   description: "Together with Kah Chan, Sophie Price, Everton Fragoso, and various other friends at Flick, we built a bespoke design system that serves more than 7 front-ends."
+  people:
+    - Kah Chan
+    - Sophie Price
+    - Everton Fragoso
+  observations:
+    - Framework-agnostic pattern libraries are more portable
+    - People drive design systems within companies more than the tech
+    - Communicating breaking changes is a vital responsibility of any code library
+    - Using arbitrary breakpoints is less valuable than making components responsive without media queries
   responsibilities:
     - Majority of the front-end development
-    - Team lead
-    - Development of the design system
-    - Rollout of releases
+    - Front-end team lead
+    - Development of the static site, using Middleman.
+    - Rollout of package releases
     - Implementation of releases in the various front-ends
     - Migration of front-ends to support our package releases
+  url: https://flick.design.energy
+  images:
+    promo: flick_design_system_opengraph.jpg
+    screenshots:
+      - flick_design_system_screenshot.png
 - id: tangram
-  title: Trade Me's Tangram Angular design system
+  title: Trade Me's Tangram. An Angular-based design system
   description: "As one of 7 CSS developers, and countless Angular devs, I helped build out patterns for Trade Me's design system: Tangram."
+  people:
+    - Trade Me's full-time Tangram Developers
+    - Trade Me's Product Design team
+  observations:
+    - CSS's `pointer-events: none;` is an anti-pattern.
+    - Design systems should start with documentation first
+    - Creating accessible web properties is a top-to-bottom responsibility
+    - Working against [the Principle of Least Power](https://en.wikipedia.org/wiki/Rule_of_least_power) makes the resulting work fragile
   responsibilities:
     - Angular component development and conceptualisation
+    - Feasibility studies and component prototyping
     - Component cross-browser testing
     - Component unit testing
+  url: https://tangram.nz
+  images:
+    promo: tangram_home.jpg
+    screenshots:
+      - tangram_screenshot.png

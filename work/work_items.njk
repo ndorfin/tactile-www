@@ -4,15 +4,47 @@ pagination:
     size: 1
     alias: work
 permalink: "work/{{ work.id | slug }}/"
-section: Work
 ---
+
+<figure>
+  <img src="../images/{{ work.images.promo }}" alt="">
+</figure>
 
 {{ work.description }}
 
-<h3>Responsibilities</h3>
+<figure>
+  <img src="../images/{{ work.images.screenshots }}" alt="">
+</figure>
 
-<ul>
-  {% for responsibility in work.responsibilities %}
-  <li>{{responsibility}}</li>
-  {% endfor %}
-</ul>
+<section>
+  <header>
+    <h3>Responsibilities</h3>
+  </header>
+  <ul>
+    {% for responsibility in work.responsibilities %}
+    <li>{{responsibility}}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <header>
+    <h3>Team-mates</h3>
+  </header>
+  <ul>
+    {% for person in work.people %}
+    <li>{{person}}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <header>
+    <h3>Observations and insights</h3>
+  </header>
+  <ul>
+    {% for insight in work.observations %}
+    <li>{{insight}}</li>
+    {% endfor %}
+  </ul>
+</section>

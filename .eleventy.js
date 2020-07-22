@@ -139,6 +139,7 @@ module.exports = function(eleventyConfig) {
       "jpeg",
       "mp4",
       "jpg",
+      "png",
       "yaml",
     ],
     htmlTemplateEngine: "njk",

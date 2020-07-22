@@ -6,15 +6,6 @@ article h3 {
   --font-size-multipluer: 1.5;
 }
 
-figure {
-  margin: 0;
-  max-width: 100%;
-}
-
-img {
-  max-width: 100%;
-}
-
 img.contextual {
   max-width: 50%;
   border-radius: 0.25rem;
@@ -23,11 +14,6 @@ img.contextual {
 
 article {
   max-width: 50rem;
-}
-
-video {
-  max-width: 100%;
-  max-height: 100vh;
 }
 
 @media (min-width:800px) {
