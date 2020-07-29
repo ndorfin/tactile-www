@@ -1,58 +1,29 @@
 ---
 eleventyExcludeFromCollections: true
+layout: "shared.njk"
+title: "About"
+additional_stylesheets:
+  - "css/home.css"
+head_extra: |-
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-title" content="tactile.co.za">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+  <link rel="manifest" href="/manifest.json">
 ---
-{% set css %}
-  {% include "css/core.css" %}
-  {% include "css/home.css" %}
-{% endset %}
-<!DOCTYPE html>
-<html lang="en-ZA">
-<meta charset="UTF-8">
-<title>Shaun O'Connell - tactile.co.za</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>{{ css | cssmin | safe }}</style>
-<meta name="theme-color" content="#fff">
-<meta name="apple-mobile-web-app-title" content="tactile.co.za">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
-<link rel="manifest" href="/manifest.json">
-<main>
-  <header>
-    <h1>tactile.co.za</h1>
-    <h2 class="a11y">About</h2>
-    <p>
-      Shaun O’Connell is a Front-end Developer and <abbr title="User eXperience">UX</abbr> person based in Wellington,
-      New Zealand.
-    <p>
-      <a href="blog/">Currently teaching web development in Madagascar</a>.
-  </header>
-  <article>
-    <header>
-      <h2>I can help you with…
-    </header>
-    <ul>
-      <li>Front-end consulting
-      <li>Mentoring and teaching web development
-      <li>Web performance optimisations
-      <li><abbr title="Progressive web application">PWA</abbr> development
-      <li>Static site generation
-      <li>Design System & Pattern Library development
-      <li>Web application templating (Traditional and Client-side)
-      <li>Web master duties
-      <li>Wireframing and Interaction Design
-      <li>User research
-    </ul>
-  </article>
-  <footer>
-    <h2 class="a11y">More info</h2>
-    <p>Find me on:
-    <ul>
-      <li><a href="https://github.com/ndorfin">Github: ndorfin</a>
-      <li><a href="https://codepen.io/ndorfin">CodePen: ndorfin</a>
-      <li><a href="https://twitter.com/ndorfin">Twitter: @ndorfin</a>
-      <li><a href="https://www.linkedin.com/in/ndorfin/">LinkedIn: in/ndorfin</a>
-      <li><a href="https://www.quora.com/profile/Shaun-OConnell">Quora: @Shaun-OConnell</a>
-    </ul>
-  </footer>
-</main>
-<script src="js/site.js" async></script>
+<p>
+  <a href="blog/">Currently teaching web development in Madagascar</a>.
+</p>
+<h2>I can help you with…</h2>
+<ul>
+  <li>Front-end consulting
+  <li>Mentoring and teaching web development
+  <li>Web performance optimisations
+  <li><abbr title="Progressive web application">PWA</abbr> development
+  <li>Static site generation
+  <li>Design System & Pattern Library development
+  <li>Web application templating (Traditional and Client-side)
+  <li>Web master duties
+  <li>Wireframing and Interaction Design
+  <li>User research
+</ul>

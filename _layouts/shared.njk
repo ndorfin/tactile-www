@@ -1,5 +1,6 @@
 {% set css %}
   {% include "css/core.css" %}
+  {% include "css/nav.css" %}
   {% for styles in additional_stylesheets %}
     {% include styles %}
   {% endfor %}
@@ -10,12 +11,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>{{ css | cssmin | safe }}</style>
 <title>{{ title }} - tactile.co.za</title>
-<body class="{{section | slug}}">
+{{ head_extra | safe }}
+<body {% if section %}class="{{ section | slug }}"{% endif %}>
+{% include "site_header.njk" %}
+{% include "site_nav.njk" %}
+{% if back %}
+<p><a href="{{ back.url }}">Back to the {{ back.title }} page</a></p>
+{% endif %}
 <main>
+  {% if section %}
   <header>
-    <h1>{{ section }}</h1>
-    <p><a href="{{ back.url }}">Back to the {{ back.title }} page</a></p>
+    <h2>{{ section }}</h2>
   </header>
+  {% endif %}
   <article>
     <header>
       <h2>{{ title }}</h2>
@@ -23,4 +31,6 @@
     {{ content | safe }}
   </article>
 </main>
-<script src="/js/site.js" async></script>
+{% include "site_footer.njk" %}
+{% include "site_scripts.njk" %}
+
