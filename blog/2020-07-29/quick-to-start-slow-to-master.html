@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quick to start, slow to master - Tactile Blog</title>
+    <style>:root{--font-family-default:Georgia,sans-serif;--font-family-logo:var(--font-family-default);--font-family-body:var(--font-family-default);--font-size-base:16px;--font-size-multiplier:1;--font-line-height:1.5;--channels-default:153,102,102;--channels-highlight:187,34,34;--colour-text-body:rgb(var(--channels-default));--colour-text-logo:rgb(68, 34, 34);--colour-shadow:rgba(0, 0, 0, 0.05);--transition-duration-default:.2s}html{font-size:var(--font-size-base);line-height:var(--font-line-height);font-family:var(--font-family-body);height:100%}body{margin:5vh 5vw;color:var(--colour-text-body);min-height:100%}body *{font-size:calc(var(--font-size-multiplier) * 1rem)}h1{--font-size-multiplier:3;font-family:var(--font-family-logo);font-weight:600;color:var(--colour-text-logo)}abbr{text-decoration:none;border-bottom:none}a{color:rgb(var(--channels-highlight));text-decoration:none;border-bottom-color:rgba(var(--channels-highlight),.25);border-bottom-style:solid;border-bottom-width:.0625rem;transition-property:border-color;transition-duration:var(--transition-duration-default)}a:hover{border-bottom-color:currentColor}.a11y{position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}main>article>header>h2{--font-size-multiplier:2}article h3{--font-size-multipluer:1.5}figure{margin:0;max-width:100%}img{max-width:100%}img.contextual{max-width:50%;border-radius:.25rem;border:.0625rem solid rgba(0,0,0,.2)}article{max-width:50rem}video{max-width:100%;max-height:100vh}@media (min-width:800px){figure{max-width:60%;margin:auto}img.contextual{float:right;width:200px;margin:.25rem 0 2rem 3rem}}</style>
+  </head>
+  <body>
+    <header>
+      <h1><a href="../">Tactile Blog</a></h1>
+    </header>
+    <main>
+      <article>
+        <header>
+          <h2>Quick to start, slow to master</h2>
+        </header>
+        
+<h3>Reviewing</h3>
+<p>
+  The students completed a <a href="https://github.com/onja-org/front-end-assessment">3-day front-end assessment</a> recently, which was subsequently marked, and reviewed with each student's fork. It was a labourious experience, but I hope all the students came out of it feeling better equipped for the future.<br>
+  We're now continuing on the project to practice our front-end skills, and use it as an opportunity to learn new skills too.
+
+<figure>
+  <img src="./puppies.jpg" alt="">
+  <figcaption>Skinny's puppies are getting big and feisty</figcaption>
+</figure>
+
+
+<h3>A new week, a new technology or three</h3>
+
+<p>
+  We are now into month 5 of CSS, feeling relatively comfortable, but the curriculum threw a new curveball: <a href="https://sass-lang.com/">Sass</a>.
+
+<p>
+  I had some proper cringy moments trying to get the students up and running with <code>node-sass</code>, explaining how the JavaScript ecosystem works, and how <em>easy</em> it is to get any Node-based project up and running. *cue smirk*
+
+<p>
+  Watching the students navigate the node package quagmire was gut-wrenching. I was reminded of my own encounters with Node.js unknowns and the difficulties they introduced. To make it even more troublesome, the students are all using Windows 10, which has its own idiosyncracies we have to deal with.
+
+<p>
+  But with many explanations and back-tracking on wrong-turns, the students and I managed to get Sass to watch a directory, and compile our <abbr title="Sass CSS">SCSS</abbr> files. [Can you hear the angels singing?]<br>
+  In doing so, we have to navigate those introduced hurdles such as having to restart our <code>watch</code> script every time we add a new SCSS file to the mix.<br>
+  A few of the students asked why all this was necessary, when they could achieve what they needed to with <em>vanilla</em> CSS. Factoring in CSS Custom Properties, and the forgiveness of the browser, I saw their point… but they hadn't seen the potential Sass (or any transpiler for that matter) has to offer.
+
+<p>
+  After having converted all their existing CSS to SCSS, some insights started to drop. Sass was checking their CSS for validity, something the browser and editor let slide.<br>
+  The lights came on when they could link the <code>max-width</code> value of a containing element to a breakpoint that would reshape that element.<br>
+  Or, when they could generate all their <code>@font-face</code> declarations from a Sass list.<br>
+  Or, when they could start using <code>@mixin</code>s, abstract classes, and <code>@function</code>s to express all their intentions through code, rather than keep it bottled up in comments or worse, their minds.
+
+<p>
+  It's fantastic to see the students applying their new programming tricks to things like CSS. Some of them are even relieved that they don't have to do so much typing as they would with traditional CSS.
+</p>
+
+<img class="contextual" src="./caterpillar.jpg" alt="A close-up of a rather prickly caterpillar scurrying along the floor outside the classroom">
+
+<h3>The knowledge gap</h3>
+<p>
+  As the assessment shows, some of the students are falling behind. Those students with poor English skills mostly do poorly with front-end disciplines too. And, as we pile more technologies on, the gap widens. We don't have the time budget to offer remedial classes.<br>
+  How do teachers deal with such experiences?! I can see some of our students struggling, but it feels like I can't help start that spark of insight they need.
+
+
+<h3>Front-end is knowledge first, logic second.</h3>
+<p>
+  I see the maxim <q>Quick to start, Slow to Master</q> at play each day here when the students work on the front-end aspects. They have to build up their experiences, and pave those knowledge pathways so that they're better equipped for similar challenges in the future.<br>
+  They have foundational knowledge, but it's going to take years before they're comfortably and confidently working on front-end projects.
+
+<p>
+  I can see how HTML and CSS are often overlooked by other developers. With a small cost of time and effort, you can learn most of what the two languages offer, which comes saddled with misplaced confidence.
+  You could cover 80% of this tech with 20% of the effort, but the real benefit is in the last 20% of the tech. The first 80% is just outputting code, the last 20% is coherency, resiliency, and synchronicity.
+
+<p>
+  <img src="./starfield.jpg" alt="The milky way shows itself in this long-exposure of the skies south of Mahanoro">
+</p>
+
+<p>
+  If the various web technologies were instruments, then surely the Front-end Developer is the conductor.<br>
+  <em>*hands waving*</em>
+
+
+      </article>
+    </main>
+    <footer>
+      <ul>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+      
+      <li>
+        Previous post:
+        <a rel="prev" href="/blog/2020-06-22/breathing-room.html">
+          Breathing room
+        </a>
+      </li>
+    
+  
+
+</ul>
+
+    </footer>
+  </body>
+</html>
