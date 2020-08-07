@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Shaun’s ‘Teach HTML in 4 weeks’ - Tactile Blog</title>
-    <style>:root{--font-family-default:Georgia,sans-serif;--font-family-logo:var(--font-family-default);--font-family-body:var(--font-family-default);--font-size-base:16px;--font-size-multiplier:1;--font-line-height:1.5;--channels-default:153,102,102;--channels-highlight:187,34,34;--colour-text-body:rgb(var(--channels-default));--colour-text-logo:rgb(68, 34, 34);--colour-shadow:rgba(0, 0, 0, 0.05);--transition-duration-default:.2s}html{font-size:var(--font-size-base);line-height:var(--font-line-height);font-family:var(--font-family-body);height:100%}body{margin:5vh 5vw;color:var(--colour-text-body);min-height:100%}body *{font-size:calc(var(--font-size-multiplier) * 1rem)}h1{--font-size-multiplier:3;font-family:var(--font-family-logo);font-weight:600;color:var(--colour-text-logo)}abbr{text-decoration:none;border-bottom:none}a{color:rgb(var(--channels-highlight));text-decoration:none;border-bottom-color:rgba(var(--channels-highlight),.25);border-bottom-style:solid;border-bottom-width:.0625rem;transition-property:border-color;transition-duration:var(--transition-duration-default)}a:hover{border-bottom-color:currentColor}.a11y{position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}main>article>header>h2{--font-size-multiplier:2}article h3{--font-size-multipluer:1.5}figure{margin:0;max-width:100%}img{max-width:100%}img.contextual{max-width:50%;border-radius:.25rem;border:.0625rem solid rgba(0,0,0,.2)}article{max-width:50rem}video{max-width:100%;max-height:100vh}@media (min-width:800px){figure{max-width:60%;margin:auto}img.contextual{float:right;width:200px;margin:.25rem 0 2rem 3rem}}</style>
-  </head>
-  <body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>:root{--font-family-default:Georgia,sans-serif;--font-family-logo:var(--font-family-default);--font-family-body:var(--font-family-default);--font-size-base:16px;--font-size-multiplier:1;--font-line-height:1.5;--channels-default:80,80,80;--channels-highlight:182,27,27;--colour-text-body:rgb(var(--channels-default));--colour-text-logo:rgb(68, 34, 34);--colour-link:rgb(182, 27, 27);--colour-nav-highlight:rgb(200,200,200);--colour-shadow:rgba(0, 0, 0, 0.05);--transition-duration-default:.2s;--shadow-3d-colour:rgba(0,0,0,.1);--shadow-x-offset:3px;--shadow-y-offset:3px;--shadow-blur:0}html{font-size:var(--font-size-base);line-height:var(--font-line-height);font-family:var(--font-family-body)}body{margin:5vh 5vw 0;color:var(--colour-text-body);overflow-x:hidden}body *{font-size:calc(var(--font-size-multiplier) * 1rem)}body>header>h1{margin:0}body>header>h1>a{--font-size-multiplier:1;display:block;max-width:280px;border:none}h1{--font-size-multiplier:3;font-family:var(--font-family-logo);font-weight:600;color:var(--colour-text-logo)}abbr{text-decoration:none;border-bottom:none}a{color:var(--colour-link);text-decoration:none;border-bottom-color:rgba(var(--channels-highlight),.25);border-bottom-style:solid;border-bottom-width:.0625rem;transition-property:border-color;transition-duration:var(--transition-duration-default)}a:hover{border-bottom-color:currentColor}.a11y{position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}figure{margin:0;max-width:100%}img,svg{max-width:100%}video{max-width:100%;max-height:100vh}main>article>header>h2{--font-size-multiplier:2}body>footer{padding:2rem;margin:5rem -5vw 0;background-color:#eee}body>footer>:first-child{margin-block-start:0}body>footer>:last-child{margin-block-end:0}nav ul{list-style:none;margin:1rem 0 2rem;padding:.5rem 1.25rem;display:inline-flex;flex-direction:row;align-items:center;line-height:1;color:#eee;background-color:currentColor;border-radius:.35rem;box-shadow:inset var(--shadow-x-offset) var(--shadow-y-offset) var(--shadow-blur) var(--shadow-3d-colour)}nav ul::before{content:"";position:absolute;left:-1rem;right:-1rem;z-index:-1;display:block;height:.5rem;background-color:currentColor;color:inherit;box-shadow:inset var(--shadow-x-offset) var(--shadow-y-offset) var(--shadow-blur) var(--shadow-3d-colour)}nav ul::after{content:"";position:absolute;left:-1rem;right:-1rem;top:0;height:5.875rem;z-index:-1;display:block;background-color:#fff}nav li+li{margin-inline-start:1.25rem}nav a{display:block;text-decoration:none;text-transform:uppercase;font-weight:700;border:none;font-family:sans-serif;vertical-align:middle;background-color:#fff;padding:.5rem .75rem;font-size:14px;border-radius:.25rem;transition-property:all;transition-duration:.2s;box-shadow:var(--shadow-x-offset) var(--shadow-y-offset) var(--shadow-blur) var(--shadow-3d-colour)}nav a:active{position:relative;top:var(--shadow-y-offset);left:var(--shadow-x-offset);box-shadow:0 0 var(--shadow-blur) var(--shadow-3d-colour)}article h3{--font-size-multipluer:1.5}img.contextual{max-width:50%;border-radius:.25rem;border:.0625rem solid rgba(0,0,0,.2)}article{max-width:50rem}@media (min-width:800px){figure{max-width:60%;margin:auto}img.contextual{float:right;width:200px;margin:.25rem 0 2rem 3rem}}</style>
+<title>Shaun’s ‘Teach HTML in 4 weeks’ - tactile.co.za</title>
+
+<body class="blog">
+<header>
+  <h1>
+    <a href="/">
+      <svg viewBox="0 0 1126 156" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-labelledby="svg_content">
+        <style>
+          text {
+            font-size: 183px;
+          }
+        </style>
+        <filter id="shadow" x=".3" y=".7" width="1130.7" height="159.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="bif"/>
+          <feBlend in="SourceGraphic" in2="bif" result="s"/>
+          <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="ha"/>
+          <feOffset dx="5" dy="5"/>
+          <feGaussianBlur stdDeviation="2.5"/>
+          <feComposite in2="ha" operator="arithmetic" k2="-1" k3="1"/>
+          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.75 0"/>
+          <feBlend in2="s" result="is"/>
+        </filter>
+        <text id="svg_content" filter="url(#shadow)" x="0" y="150">tactile.co.za</text>
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/work/">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+</nav>
+
+<main>
+  <article>
     <header>
-      <h1><a href="../">Tactile Blog</a></h1>
+      <h2>Shaun’s ‘Teach HTML in 4 weeks’</h2>
     </header>
-    <main>
-      <article>
-        <header>
-          <h2>Shaun’s ‘Teach HTML in 4 weeks’</h2>
-        </header>
-        
+    
 <p>
   With roughly 10 months of available time, and a bevy of subjects to teach, it's no surprise that HTML was only given 4 weeks of time, especially when compared with the weight of learning JavaScript and React (6 months total!).
 
@@ -26,7 +55,7 @@
   HTML started as my focus when I started making websites back in 1998, after spending some of my pocket money on <cite>Sam’s Teach Yourself HTML in 24 hours</cite>.
 </p>
 <figure>
-  <img src="./sams-html.jpg" alt="Sams Teach Yourself HTML in 24 hours ">
+  <img src="../images/sams-html.jpg" alt="Sams Teach Yourself HTML in 24 hours ">
 </figure>
 <p>
   5 years later, CSS took up most of my time, but the knowledge of HTML always help laid good foundations.
@@ -53,8 +82,7 @@
 <p>
   But I'm banking on the future working effectiveness of our students not as React developers, but as <em>Web</em> developers.
 
-      </article>
-    </main>
+    
     <footer>
       <ul>
 
@@ -118,5 +146,21 @@
 </ul>
 
     </footer>
-  </body>
-</html>
+    
+  </article>
+</main>
+<footer>
+  <h2 class="a11y">More info</h2>
+  <p>Find me on:
+  <ul>
+    <li><a href="https://github.com/ndorfin">Github: ndorfin</a>
+    <li><a href="https://codepen.io/ndorfin">CodePen: ndorfin</a>
+    <li><a href="https://twitter.com/ndorfin">Twitter: @ndorfin</a>
+    <li><a href="https://www.linkedin.com/in/ndorfin/">LinkedIn: in/ndorfin</a>
+    <li><a href="https://www.quora.com/profile/Shaun-OConnell">Quora: @Shaun-OConnell</a>
+  </ul>
+</footer>
+
+<script src="/js/site.js" async></script>
+
+
