@@ -3,18 +3,23 @@ pagination:
     data: work
     size: 1
     alias: work
-permalink: "work/{{ work.id | slug }}/"
+permalink: "/work/{{work.id | slug}}/index.html"
 ---
-
-<figure>
+<p>
   <img src="../images/{{ work.images.promo }}" alt="">
-</figure>
+</p>
 
+<p>
 {{ work.description }}
-
-<figure>
+</p>
+{% if work.url %}
+<p>
+  <a href="{{ work.url }}">Check out {{ work.url_label }}</a>
+</p>
+{% endif %}
+<p>
   <img src="../images/{{ work.images.screenshots }}" alt="">
-</figure>
+</p>
 
 <section>
   <header>
@@ -44,7 +49,7 @@ permalink: "work/{{ work.id | slug }}/"
   </header>
   <ul>
     {% for insight in work.observations %}
-    <li>{{insight}}</li>
+    <li>{{insight | safe}}</li>
     {% endfor %}
   </ul>
 </section>

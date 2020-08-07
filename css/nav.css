@@ -1,29 +1,45 @@
 nav ul {
   list-style: none;
   margin: 1rem 0 2rem;
-  padding: 0;
-  display: flex;
+  padding: 0.5rem 1.25rem;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
   line-height: 1;
-  color: var(--colour-link);
+  color: #eee;
+  background-color: currentColor;
+  border-radius: 0.35rem;
+  box-shadow: inset var(--shadow-x-offset) var(--shadow-y-offset) var(--shadow-blur) var(--shadow-3d-colour);
 }
 
 nav ul::before {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
+  left: -1rem;
+  right: -1rem;
   z-index: -1;
   display: block;
-  height: 3rem;
+  height: 0.5rem;
   background-color: currentColor;
   color: inherit;
   box-shadow: inset var(--shadow-x-offset) var(--shadow-y-offset) var(--shadow-blur) var(--shadow-3d-colour);
 }
 
+nav ul::after {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  right: -1rem;
+  top: 0;
+  height: 5.875rem;
+  z-index: -1;
+  display: block;
+
+  background-color: #fff;
+}
+
 nav li + li {
-  margin-inline-start: 1rem;
+  margin-inline-start: 1.25rem;
 }
 
 nav a {

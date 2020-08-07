@@ -18,28 +18,30 @@
     - Implementation of releases in the various front-ends
     - Migration of front-ends to support our package releases
   url: https://flick.design.energy
+  url_label: flick.design.energy
   images:
     promo: flick_design_system_opengraph.jpg
     screenshots:
       - flick_design_system_screenshot.png
 - id: tangram
-  title: Trade Me's Tangram. An Angular-based design system
+  title: Trade Me's Tangram
   description: "As one of 7 CSS developers, and countless Angular devs, I helped build out patterns for Trade Me's design system: Tangram."
   people:
     - Trade Me's full-time Tangram Developers
     - Trade Me's Product Design team
   observations:
-    - CSS's `pointer-events: none;` is an anti-pattern.
+    - "CSS's <code>pointer-events: none;</code> is an anti-pattern."
     - Design systems should start with documentation first
     - Creating accessible web properties is a top-to-bottom responsibility
-    - Working against [the Principle of Least Power](https://en.wikipedia.org/wiki/Rule_of_least_power) makes the resulting work fragile
+    - Working against <a href="https://en.wikipedia.org/wiki/Rule_of_least_power">the Principle of Least Power</a> makes the resulting work fragile
   responsibilities:
     - Angular component development and conceptualisation
     - Feasibility studies and component prototyping
     - Component cross-browser testing
     - Component unit testing
   url: https://tangram.nz
+  url_label: tangram.nz
   images:
-    promo: tangram_home.jpg
+    promo: tangram_promo.png
     screenshots:
       - tangram_screenshot.png

@@ -1,37 +1,8 @@
 ---
 permalink: "{{ page | postUrl }}"
 section: Blog
+additional_stylesheets: ["css/post.css"]
+pagination_enabled: true
 ---
-{%- set css %}
-  {% include "css/core.css" %}
-  {% include "css/post.css" %}
-{% endset -%}
-<!DOCTYPE html>
-<html lang="en-ZA">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{{ title }} - Blog - tactile.co.za</title>
-    <style>{{ css | cssmin | safe }}</style>
-  </head>
-  <body>
-    {% include "site_header.njk" %}
-    <main>
-      <header>
-        <h2>Blog</h2>
-        <p><a href="../">Back to Recent posts</a></p>
-      </header>
-      <article>
-        <header>
-          <h2>{{ title }}</h2>
-        </header>
-        {{ content | safe }}
-      </article>
-    </main>
-    <footer>
-      {% include "pagination.njk" %}
-    </footer>
-    {% include "site_footer.njk" %}
-    {% include "site_scripts.njk" %}
-  </body>
-</html>
+{% extends "_layouts/shared.njk" %}
+{{ content | safe }}

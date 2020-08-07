@@ -5,30 +5,31 @@
     {% include styles %}
   {% endfor %}
 {% endset %}
+{%- set $title = title -%}
+{%- if work.title -%}
+  {%- set $title = work.title -%}
+{%- endif -%}
 <!DOCTYPE html>
 <html lang="en-ZA">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>{{ css | cssmin | safe }}</style>
-<title>{{ title }} - tactile.co.za</title>
+<title>{{ $title }} - tactile.co.za</title>
 {{ head_extra | safe }}
 <body {% if section %}class="{{ section | slug }}"{% endif %}>
 {% include "site_header.njk" %}
 {% include "site_nav.njk" %}
-{% if back %}
-<p><a href="{{ back.url }}">Back to the {{ back.title }} page</a></p>
-{% endif %}
 <main>
-  {% if section %}
-  <header>
-    <h2>{{ section }}</h2>
-  </header>
-  {% endif %}
   <article>
     <header>
-      <h2>{{ title }}</h2>
+      <h2>{{ $title }}</h2>
     </header>
     {{ content | safe }}
+    {% if pagination_enabled == true %}
+    <footer>
+      {% include "_includes/pagination.njk" %}
+    </footer>
+    {% endif %}
   </article>
 </main>
 {% include "site_footer.njk" %}

@@ -3,11 +3,7 @@ layout: "shared.njk"
 eleventyExcludeFromCollections: true
 section: Blog
 title: Recent posts
-back:
-  url: "../"
-  title: "Home"
 additional_stylesheets:
-  - "css/post.css"
   - "css/blog_index.css"
 ---
 {% for group in collections.postsGroupedByMonth %}
