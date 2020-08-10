@@ -5,43 +5,51 @@ pagination:
     alias: work
 permalink: "/work/{{work.id | slug}}/index.html"
 ---
+{% if work.images.promo %}
 <p>
   <img src="../images/{{ work.images.promo }}" alt="">
 </p>
+{% endif %}
 
 <p>
-{{ work.description }}
+  {{ work.description | safe }}
 </p>
+
 {% if work.url %}
 <p>
   <a href="{{ work.url }}">Check out <b>{{ work.url_label }}</b></a>
 </p>
 {% endif %}
+
 <p>
   <img src="../images/{{ work.images.screenshots }}" alt="">
 </p>
 
+{% if work.responsibilities %}
 <section>
   <header>
     <h3>Responsibilities</h3>
   </header>
   <ul>
     {% for responsibility in work.responsibilities %}
-    <li>{{responsibility}}</li>
+    <li>{{responsibility | safe}}</li>
     {% endfor %}
   </ul>
 </section>
+{% endif %}
 
+{% if work.people %}
 <section>
   <header>
     <h3>Team-mates</h3>
   </header>
   <ul>
     {% for person in work.people %}
-    <li>{{person}}</li>
+    <li>{{person | safe}}</li>
     {% endfor %}
   </ul>
 </section>
+{% endif %}
 
 <section>
   <header>
