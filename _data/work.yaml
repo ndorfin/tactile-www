@@ -1,3 +1,25 @@
+- id: onja
+  title: Teaching Web Development at Onja
+  description: |-
+    I took on a 9-month contract in the small town of Mahanoro on the east coast of Madagascar, to teach web development (and related disciplines) to 20 Malagasy students, in their second year of becoming web developers.
+  people:
+    - Onja's administration team
+    - Loïc Pinois, fellow Front-end development teacher
+  observations:
+    - Communication comes first
+    - Tech is inherently biased towards native English speakers
+    - Abstractions can be harmful
+  responsibilities:
+    - Teaching HTML, CSS, and classic front-end development using a custom curriculum
+    - Teaching Git, bash, VS Code, and other tools we use for our projects
+    - Running extra lessons
+    - Marking assessments and quizzes
+  url: https://onja.org
+  url_label: onja.org
+  images:
+    promo: onja_team.jpg
+    screenshots:
+      - onja_classroom.jpg
 - id: flick
   title: The Flick Electric design system
   description: "Together with Kah Chan, Sophie Price, Everton Fragoso, and various other friends at Flick, we built a bespoke design system that serves more than 7 front-ends."
