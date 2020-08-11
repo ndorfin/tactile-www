@@ -45,8 +45,8 @@
     - Rollout of package releases
     - Implementation of releases in the various front-ends
     - Migration of Rails front-ends to support our package releases
-  url: https://flick.design.energy
-  url_label: flick.design.energy
+  url: https://design.flick.energy/
+  url_label: design.flick.energy/
   images:
     promo: flick_design_system_opengraph.jpg
     screenshots:

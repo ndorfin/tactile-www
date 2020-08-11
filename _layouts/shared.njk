@@ -10,13 +10,14 @@
   {%- set $title = work.title -%}
 {%- endif -%}
 <!DOCTYPE html>
-<html lang="en-ZA">
+<html lang="en-ZA" xmlns="http://www.w3.org/2000/svg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>{{ css | cssmin | safe }}</style>
 <title>{{ $title }} - tactile.co.za</title>
 {{ head_extra | safe }}
 <body class="{% if section %}{{ section | slug }}{% endif %} page_{{ page.fileSlug | slug }}">
+{% include "svg_sprite.njk" %}
 {% include "site_header.njk" %}
 {% include "site_nav.njk" %}
 <main>
@@ -27,7 +28,7 @@
     {{ content | safe }}
     {% if pagination_enabled == true %}
     <footer>
-      {% include "_includes/pagination.njk" %}
+      {% include "pagination.njk" %}
     </footer>
     {% endif %}
   </article>

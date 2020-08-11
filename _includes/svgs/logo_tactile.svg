@@ -1,0 +1,8 @@
+<svg id="logo_tactile" viewBox="0 0 1126 156" aria-labelledby="svg_content">
+  <style>
+    text {
+      font-size: 183px;
+    }
+  </style>
+  <text id="svg_content" filter="url(#shadow)" x="0" y="150">tactile.co.za</text>
+</svg>
