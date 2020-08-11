@@ -6,9 +6,9 @@ pagination:
 permalink: "/work/{{work.id | slug}}/index.html"
 ---
 {% if work.images.promo %}
-<p>
+<figure>
   <img src="../images/{{ work.images.promo }}" alt="">
-</p>
+</figure>
 {% endif %}
 
 <p>
@@ -21,9 +21,9 @@ permalink: "/work/{{work.id | slug}}/index.html"
 </p>
 {% endif %}
 
-<p>
+<figure>
   <img src="../images/{{ work.images.screenshots }}" alt="">
-</p>
+</figure>
 
 {% if work.responsibilities %}
 <section>

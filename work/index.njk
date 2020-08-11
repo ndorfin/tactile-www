@@ -3,13 +3,16 @@ layout: "shared.njk"
 eleventyExcludeFromCollections: true
 title: "Examples of my work"
 section: Work
+additional_stylesheets: ['css/work.css']
 ---
 <p>These pages are a work in progress. Think: "The Mechanic and their car".
-<ul>
+<ul class="work_list">
 {% for project in work %}
   <li>
-    <a href="{{project.id}}/">
-      {{project.title}}
+    <a class="work_item" href="{{project.id}}/" style="--work_image_promo: url('images/{{project.images.promo}}')">
+      <img src="images/{{project.images.promo}}" alt="">
+      <b>{{project.title}}</b>
+      <span>{{project.summary}}</span>
     </a>
   </li>
 {% endfor %}

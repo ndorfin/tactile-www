@@ -16,7 +16,7 @@
 <style>{{ css | cssmin | safe }}</style>
 <title>{{ $title }} - tactile.co.za</title>
 {{ head_extra | safe }}
-<body {% if section %}class="{{ section | slug }}"{% endif %}>
+<body class="{% if section %}{{ section | slug }}{% endif %} page_{{ page.fileSlug | slug }}">
 {% include "site_header.njk" %}
 {% include "site_nav.njk" %}
 <main>

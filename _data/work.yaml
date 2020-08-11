@@ -1,5 +1,7 @@
 - id: onja
-  title: Teaching Web Development at Onja
+  title: Teaching web development
+  summary: |-
+    A chance to share what I've learned, and empower those less fortunate than myself.
   description: |-
     I took on a 9-month contract in the small town of Mahanoro on the east coast of Madagascar, to teach web development (and related disciplines) to 20 Malagasy students, in their second year of becoming web developers.
     You can read about my experiences with this project on <a href="/blog/">my blog</a>
@@ -22,12 +24,15 @@
     screenshots:
       - onja_classroom.jpg
 - id: flick
-  title: The Flick Electric design system
-  description: "Together with Kah Chan, Sophie Price, Everton Fragoso, and various other friends at Flick, we built a bespoke design system that serves more than 7 front-ends."
+  title: The Flick design system
+  summary: |-
+    A bespoke Design System, helping several front-ends stay consistent and reliable.
+  description: |-
+    Together with Kah Chan, Sophie Price, Everton Fragoso, and various other friends at Flick, we built a bespoke design system that serves more than 7 front-ends.
   people:
-    - Kah Chan
-    - Sophie Price
-    - Everton Fragoso
+    - Kah Chan, Product designer
+    - Sophie Price, Senior Designer
+    - Everton Fragoso, Full-stack developer
   observations:
     - Framework-agnostic pattern libraries are more portable
     - People drive design systems within companies more than the tech
@@ -35,11 +40,11 @@
     - Using arbitrary breakpoints is less valuable than making components responsive without media queries
   responsibilities:
     - Majority of the front-end development
-    - Front-end team lead
+    - Front-end team lead, and mentor.
     - Development of the static site, using Middleman.
     - Rollout of package releases
     - Implementation of releases in the various front-ends
-    - Migration of front-ends to support our package releases
+    - Migration of Rails front-ends to support our package releases
   url: https://flick.design.energy
   url_label: flick.design.energy
   images:
@@ -48,7 +53,10 @@
       - flick_design_system_screenshot.png
 - id: tangram
   title: Trade Me's Tangram
-  description: "As one of 7 CSS developers, and countless Angular devs, I helped build out patterns for Trade Me's design system: Tangram."
+  summary: |-
+    Contract work on one of NZ's biggest Design Systems
+  description: |-
+    As one of 7 CSS developers, and countless Angular devs, I helped build out patterns for Trade Me's design system: Tangram.
   people:
     - Trade Me's full-time Tangram Developers
     - Trade Me's Product Design team
