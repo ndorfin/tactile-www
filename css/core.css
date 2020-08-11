@@ -17,6 +17,7 @@
   --shadow-x-offset: 3px;
   --shadow-y-offset: 3px;
   --shadow-blur: 0;
+  --shadow: var(--shadow-x-offset) var(--shadow-y-offset) var(--shadow-blur) var(--shadow-3d-colour);
 }
 
 html {
@@ -103,9 +104,10 @@ main > article > header > h2 {
 }
 
 body > footer {
-  padding: 2rem;
+  padding: 2rem 5vw;
   margin: 5rem -5vw 0;
   background-color: #eee;
+  box-shadow: inset var(--shadow);
 }
 
 body > footer > :first-child {
