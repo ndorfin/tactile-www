@@ -1,20 +1,18 @@
-{% set icon_filters %}
-  {% include "svgs/_filter_shadow.svg" %}
-{% endset %}
-{% set svg_icons %}
-  {% include "svgs/icon_codepen.svg" %}
-  {% include "svgs/icon_github.svg" %}
-  {% include "svgs/icon_links_in.svg" %}
-  {% include "svgs/icon_quora.svg" %}
-  {% include "svgs/icon_rss.svg" %}
-  {% include "svgs/icon_twits.svg" %}
-  {% include "svgs/logo_tactile.svg" %}
-{% endset %}
+{% set svg %}
 <div id="svg_sprite" style="visibility:hidden; height:0; width:0; overflow:hidden;">
   <svg>
     <defs>
-      {{ icon_filters | safe }}
+      {% include "svgs/_filter_shadow.svg" %}
     </defs>
-    {{ svg_icons | safe }}
+    {% include "svgs/icon_codepen.svg" %}
+    {% include "svgs/icon_github.svg" %}
+    {% include "svgs/icon_links_in.svg" %}
+    {% include "svgs/icon_quora.svg" %}
+    {% include "svgs/icon_rss.svg" %}
+    {% include "svgs/icon_twits.svg" %}
+    {% include "svgs/logo_tactile.svg" %}
   </svg>
 </div>
+{% endset %}
+{{ svg | htmlmin |safe }}
+

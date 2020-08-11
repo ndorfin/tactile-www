@@ -1,1 +1,6 @@
-<script src="/js/site.js" async></script>
+{% set site_script %}
+  {% include "js/site.js" %}
+{% endset %}
+<script async>
+  {{ site_script | jsmin | safe }}
+</script>

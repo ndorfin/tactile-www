@@ -1,5 +1,7 @@
 const yaml = require("js-yaml");
 const CleanCSS = require("clean-css");
+const Terser = require("terser");
+const minify = require('html-minifier').minify;
 
 const MONTHS = [
   "January",
@@ -83,6 +85,22 @@ module.exports = function(eleventyConfig) {
   /* Filters */
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
+  });
+  eleventyConfig.addNunjucksAsyncFilter("jsmin", async (code, callback) => {
+    try {
+      const minified = await Terser.minify(code);
+      return callback(null, minified.code);
+    } catch (err) {
+      console.error("Error during terser minify:", err);
+      return callback(err, code);
+    }
+  });
+
+  eleventyConfig.addFilter("htmlmin", function(code) {
+    var result = minify(code, {
+      collapseWhitespace: true
+    });
+    return result;
   });
 
   eleventyConfig.addFilter("postUrl", function(post) {
