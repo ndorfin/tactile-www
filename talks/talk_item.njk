@@ -1,0 +1,35 @@
+---
+pagination:
+    data: talks
+    size: 1
+    alias: talk
+permalink: "/talks/{{talk.id | slug}}/index.html"
+---
+{% if talk.images.promo %}
+<figure>
+  <img src="../images/{{ talk.images.promo }}" alt="">
+</figure>
+{% endif %}
+
+<p>
+  {{ talk.description | safe }}
+</p>
+
+<dt>
+  Date:
+</dt>
+<dd>
+  <time datetime="{{ talk.date | dateISO }}">{{ talk.date }}</time>
+</dd>
+<dt>
+  Venue:
+</dt>
+<dd>
+  {{ talk.venue }}
+</dd>
+
+{% if talk.url %}
+<p>
+  <a href="{{ talk.url }}" rel="noopener noreferrer">Check out <b>{{ talk.url_label }}</b></a>
+</p>
+{% endif %}

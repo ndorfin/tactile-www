@@ -1,0 +1,18 @@
+---
+layout: "shared.njk"
+eleventyExcludeFromCollections: true
+title: "Talks I've given"
+section: Talks
+additional_stylesheets: ['css/talks.css']
+---
+<ul class="talk_list">
+{% for talk in talks %}
+  <li>
+    <a class="talk_item" href="{{talk.id}}/" style="--talk_image_promo: url('images/{{talk.images.promo}}')">
+      <img src="images/{{talk.images.promo}}" alt="">
+      <b>{{talk.title}}</b>
+      <span>{{talk.summary}}</span>
+    </a>
+  </li>
+{% endfor %}
+</ul>

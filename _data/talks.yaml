@@ -1,0 +1,12 @@
+- id: some-css-best-practices-considered-harmful
+  title: (Some) CSS best practices considered harmful
+  date: 2015-06-10
+  venue: Wellington CSS Meetup
+  summary: |-
+    Summary
+  description: |-
+    Description
+  url: https://slides.com/shaunoconnell/some-css-best-practices-considered-harmful
+  url_label: slides.com
+  images:
+    promo: zzz
