@@ -1,24 +1,29 @@
-.page_talk_items main {
+.page_talk_item main {
   max-width: 1000px;
 }
 
+.page_talk_item dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
 @media (min-width: 800px) {
-  .page_talk_items article {
+  .page_talk_item article {
     overflow: hidden;
   }
 
-  .page_talk_items article > *:not(figure):not(header) {
+  .page_talk_item article > *:not(figure):not(header) {
     margin-left: 24rem;
   }
 
-  .page_talk_items figure {
+  .page_talk_item figure {
     width: 20rem;
     float: left;
     clear: left;
     margin: 0 3rem 2rem 0;
   }
 
-  .page_talk_items img {
+  .page_talk_item img {
     border-radius: .25rem;
     box-shadow: var(--shadow);
   }

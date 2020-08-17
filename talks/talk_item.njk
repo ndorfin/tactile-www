@@ -15,21 +15,23 @@ permalink: "/talks/{{talk.id | slug}}/index.html"
   {{ talk.description | safe }}
 </p>
 
-<dt>
-  Date:
-</dt>
-<dd>
-  <time datetime="{{ talk.date | dateISO }}">{{ talk.date }}</time>
-</dd>
-<dt>
-  Venue:
-</dt>
-<dd>
-  {{ talk.venue }}
-</dd>
+<dl>
+  <dt>
+    Date:
+  </dt>
+  <dd>
+    <time datetime="{{ talk.date | dateISO }}">{{ talk.date | ccyyMMdd }}</time>
+  </dd>
+  <dt>
+    Venue:
+  </dt>
+  <dd>
+    {{ talk.venue }}
+  </dd>
+</dl>
 
 {% if talk.url %}
 <p>
-  <a href="{{ talk.url }}" rel="noopener noreferrer">Check out <b>{{ talk.url_label }}</b></a>
+  <a href="{{ talk.url }}" rel="noopener nofollow noreferrer">Check out <b>{{ talk.url_label }}</b></a>
 </p>
 {% endif %}

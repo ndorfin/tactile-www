@@ -3,11 +3,36 @@
   date: 2015-06-10
   venue: Wellington CSS Meetup
   summary: |-
-    Summary
+    CSS methodologies like BEM are good, right?
   description: |-
-    Description
-    <a rel="noopener nofollow noreferrer" href="https://www.meetup.com/WellingtonCSS/events/223141830/">meetup.com/WellingtonCSS</a>
+    I gave this talk at <a rel="noopener nofollow noreferrer" href="https://www.meetup.com/WellingtonCSS/events/223141830/">Wellington’s CSS meetup</a> in June, 2015. It was well-received, but could have been better from my point of view.
   url: https://slides.com/shaunoconnell/some-css-best-practices-considered-harmful
   url_label: slides.com
   images:
     promo: some-css-best-practices-considered-harmful.png
+- id: web-performance-101
+  title: Web Performance 101
+  date: 2015-06-22
+  venue: Abletech
+  summary: |-
+    Sharing what I've learned about Web Performance with my fellow Abletechers
+  description: |-
+    This talk was given shortly after the measured success of some performance optimisations we made on the <a rel="noopener nofollow noreferrer" href="https://abletech.nz">Abletech</a> and <a rel="noopener nofollow noreferrer" href="https://addressfinder.nz">AddressFinder</a> websites.
+  url: https://slides.com/shaunoconnell/web-performance-101
+  url_label: slides.com
+  images:
+    promo: web-performance-101.png
+- id: kiwibank-ux-engineering
+  title: Kiwibank UX engineering
+  date: 2015-07-23
+  venue: Abletech
+  summary: |-
+    Sharing what we learned using Angular.js as a clickthrough tool
+  description: |-
+    <p>Following some recent UX work we did at Kiwibank, we shared what we did with the larger Abletech team.
+    <p>We used Angular.js as a rich prototyping tool, building static screens to emulate what the customer would experience with a proposed system.
+    <p>We then tested the prototype with some real potential users!
+  url: https://slides.com/shaunoconnell/kiwibank-ux-engineering/
+  url_label: slides.com
+  images:
+    promo: kiwibank-ux-engineering.png
