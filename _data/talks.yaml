@@ -36,3 +36,17 @@
   url_label: slides.com
   images:
     promo: kiwibank-ux-engineering.png
+- id: fedup-at-flick
+  title: FEDUP at Flick
+  date: 2019-11-02
+  venue: KiwiRuby
+  summary: |-
+    Sophie Price and I presented the work we did on a bespoke design system at KiwiRuby 2019.
+  description: |-
+    <p>After more than a year of writing hand-crafted HTML and CSS, and my colleague Sophie wrangling all the design assets, and producing some incredible screens, we started meeting in the middle with our own design system.</p>
+    <p>It was a fantastic journey and we learned many things along the way. But the best part is that it is useful, and is being used.</p>
+    <p>This talk covers some of our rationale, shares some of our lessons, and hopefully inspired the ~200 delegates of KiwiRuby to build their own.</p>
+  url: https://docs.google.com/presentation/d/1ViHFVq2Z-lARoW8tNPY3HHjPBKun_Ww5z7u7JTnKTOM/edit#slide=id.g6f81e1c9fb_0_0
+  url_label: Google Slides
+  images:
+    promo: fedup-at-flick.png
