@@ -26,7 +26,7 @@ permalink: "/talks/{{talk.id | slug}}/index.html"
     Venue:
   </dt>
   <dd>
-    {{ talk.venue }}
+    {{ talk.venue | safe }}
   </dd>
 </dl>
 
