@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in Front-end development lecturing, in the remote town of Mahanoro, Madagascar</description>
-    <lastBuildDate>Thu, 27 Aug 2020 06:51:36 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 10:35:22 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>Deep breath</title>
+      <link>https://tactile.co.za/blog/2020-09-08/deep-breath.html </link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2020-09-08/deep-breath.html</guid>
+      <description><![CDATA[The calm before the returning-home-through-the-shit-storm]]></description>
+    </item>
     <item>
       <title>Quick to start, slow to master</title>
       <link>https://tactile.co.za/blog/2020-07-29/quick-to-start-slow-to-master.html </link>
