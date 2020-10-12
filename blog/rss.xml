@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in Front-end development lecturing, in the remote town of Mahanoro, Madagascar</description>
-    <lastBuildDate>Tue, 08 Sep 2020 10:35:22 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2020 18:04:12 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>Left wanting more</title>
+      <link>https://tactile.co.za/blog/2020-10-12/left-wanting-more.html </link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2020-10-12/left-wanting-more.html</guid>
+      <description><![CDATA[Trying to sum up a crazy last month, and talk about the plan ahead.]]></description>
+    </item>
     <item>
       <title>Deep breath</title>
       <link>https://tactile.co.za/blog/2020-09-08/deep-breath.html </link>
