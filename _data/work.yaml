@@ -1,3 +1,29 @@
+- id: lilregie
+  title: Lil Regie's Workshop
+  summary: |-
+    Building, documenting and testing UI patterns for Lil Regie so that they can build extensive front-ends.
+  description: |-
+    Lil Regie had a design done by Tim James for their new site, and they wanted a CMS-powered website to go with it.
+  people:
+    - Tim James (designer)
+    - Steve Hoeksema (CTO)
+    - Juri Hahn (Senior developer)
+    - The rest of the Lil Regie team
+  observations:
+    - <a href="https://stimulus.hotwired.dev/">StimulusJS</a> is a smart and friendly library to work with
+    - CSS custom properties continue to blow my mind
+    - CSS Grid's named template areas have amazing adaptability
+    - GitHub's private NPM registry and GitHub Actions work well
+  responsibilities:
+    - Cross-browser testing
+    - Documenting all the components used in the Pattern library
+    - Building a bespoke pattern library with Middleman
+  url: https://lilregie.github.io/frontend-workshop/
+  url_label: Lil Regie's Workshop
+  images:
+    promo: lil_regie_workshop.png
+    screenshots:
+      - lil_regie_homepage.png
 - id: onja
   title: Teaching web development
   summary: |-
