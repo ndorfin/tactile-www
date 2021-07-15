@@ -57,7 +57,7 @@ module.exports = function(eleventyConfig) {
 
   /* Data extensions */
   eleventyConfig.setDataDeepMerge(true);
-  eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
+  eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
   /* Collections */
   eleventyConfig.addCollection('sortedPosts', getAllSortedPosts);
