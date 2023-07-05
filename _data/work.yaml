@@ -10,15 +10,21 @@
     - Simon Howard (Owner)
     - Kim Partridge (Project management)
   observations:
-    -
+    - It was rewarding working with a tech-competent client, who had an existing workflow for publishing their site content.
   responsibilities:
-    -
+    - Low-fideltiy design exploration with <a href="https://marcmchardy.com/">Marc</a>
+    - Translation of existing flat content to a Jekyll data-driven system
+    - URL audit and mapping of existing content to new content
+    - Content modelling in Jekyll using a combination of markdown and YAML.
+    - Minor performance improvements
+    - Front-end development, testing.
+    - Progressive-enhancement techniques used and PWA foundations set.
   url: https://zxsecurity.co.nz
   url_label: ZX Security
   images:
-    promo: .png
+    promo: zx_security_promo.png
     screenshots:
-      - .png
+      - zx_security_screenshot.webp
 # - id: lilregie
 #   title: Lil Regie's Workshop
 #   summary: |-
