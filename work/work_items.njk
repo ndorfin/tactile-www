@@ -21,9 +21,13 @@ permalink: "/work/{{work.id | slug}}/index.html"
 </p>
 {% endif %}
 
+{% if work.images.screenshots %}
+{% for screenshot in work.images.screenshots %}
 <figure>
-  <img src="../images/{{ work.images.screenshots }}" alt="">
+  <img src="../images/{{ screenshot }}" alt="">
 </figure>
+{% endfor %}
+{% endif %}
 
 {% if work.responsibilities %}
 <section>
