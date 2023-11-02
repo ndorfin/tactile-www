@@ -6,13 +6,13 @@ title: Recent posts
 additional_stylesheets:
   - "css/blog_index.css"
 ---
-{% for group in collections.postsGroupedByMonth %}
+{% for group in collections.postsGroupedByMonth | reverse %}
 <section>
   <header>
     <h3>{{ group.month | formattedMonthYear }}</h3>
   </header>
   <ul>
-    {% for post in group.posts %}
+    {% for post in group.posts | reverse %}
     <li>
         <a href="{{ post | postUrl }}">{{ post.data.title }}</a>
         <span class="a11y">Written on</span>
