@@ -15,6 +15,7 @@
     "terser": "^5.19.0"
   },
   "scripts": {
+    "start": "npm run serve",
     "build": "eleventy",
     "serve": "eleventy --serve --port=8081"
   }
