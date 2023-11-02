@@ -17,7 +17,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="view-transition" content="same-origin">
-<style>{{ css | cssmin | safe }}</style>
+<style>
+  html {
+    --active-page-id: "{{ page_id }}";
+  }
+  {{ css | cssmin | safe }}
+</style>
 <title>{{ $title }} - tactile.co.za</title>
 {{ head_extra | safe }}
 <body class="{% if section %}{{ section | slug }}{% endif %} page_{{ page.fileSlug | slug }}">
