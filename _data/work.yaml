@@ -1,3 +1,57 @@
+- id: zxsecurity
+  title: ZX Security's website
+  summary: |-
+    Cursory low-level design, content modelling, and development of ZX Security's public-facing website.
+  description: |-
+    While working at Ackama, the ideal project happened my way: A Jekyll-driven static site for a great little IT security company.
+  people:
+    - Marc McHardy (Lead Designer)
+    - Chris Hails (Content)
+    - Simon Howard (Owner)
+    - Kim Partridge (Project management)
+  observations:
+    - It was rewarding working with a tech-competent client, who had an existing workflow for publishing their site content.
+  responsibilities:
+    - Low-fideltiy design exploration with <a href="https://marcmchardy.com/">Marc</a>
+    - Translation of existing flat content to a Jekyll data-driven system
+    - URL audit and mapping of existing content to new content
+    - Content modelling in Jekyll using a combination of markdown and YAML.
+    - Minor performance improvements
+    - Front-end development, testing.
+    - Progressive-enhancement techniques used and PWA foundations set.
+  url: https://zxsecurity.co.nz
+  url_label: ZX Security
+  images:
+    promo: zx_security_promo.png
+    screenshots:
+      - zx_security_screenshot.webp
+- id: lilregie
+  title: Lil Regie's Workshop & Website
+  summary: |-
+    Building, documenting and testing UI patterns for Lil Regie so that they can build extensive front-ends.
+  description: |-
+    Lil Regie had a design done by Tim James for their new site, and they wanted a CMS-powered website to go with it. So I set about making a pattern library, which we called <i>Lil Regie's Front-end Workshop</i>. The Workshop included a static representation of the homepage, which was later used in their live site.
+  people:
+    - Tim James (designer)
+    - Steve Hoeksema (CTO)
+    - Juri Hahn (Senior developer)
+    - The rest of the Lil Regie team
+  observations:
+    - <a href="https://stimulus.hotwired.dev/">StimulusJS</a> is a smart and friendly library to work with
+    - CSS custom properties continue to blow my mind
+    - CSS Grid's named template areas have amazing adaptability
+    - GitHub's private NPM registry and GitHub Actions work well
+  responsibilities:
+    - Cross-browser testing
+    - Documenting all the components used in the Pattern library
+    - Building a bespoke pattern library with Middleman
+  url: https://lilregie.github.io/frontend-workshop/
+  url_label: Lil Regie's Workshop
+  images:
+    promo: lil_regie_promo.webp
+    screenshots:
+      - lil_regie_screenshot.webp
+      - lil_regie_workshop_screenshot.webp
 - id: onja
   title: Teaching web development
   summary: |-

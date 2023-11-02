@@ -7,7 +7,9 @@ permalink: "/work/{{work.id | slug}}/index.html"
 ---
 {% if work.images.promo %}
 <figure>
-  <img src="../images/{{ work.images.promo }}" alt="">
+  <picture>
+    <img src="../images/{{ work.images.promo }}" alt="">
+  </picture>
 </figure>
 {% endif %}
 
@@ -21,9 +23,15 @@ permalink: "/work/{{work.id | slug}}/index.html"
 </p>
 {% endif %}
 
+{% if work.images.screenshots %}
+{% for screenshot in work.images.screenshots %}
 <figure>
-  <img src="../images/{{ work.images.screenshots }}" alt="">
+  <picture>
+    <img src="../images/{{ screenshot }}" alt="" loading="lazy">
+  </picture>
 </figure>
+{% endfor %}
+{% endif %}
 
 {% if work.responsibilities %}
 <section>
