@@ -1,9 +1,41 @@
+- id: birdsofzevenwacht
+  title: Birds of Zevenwacht
+  summary: |-
+    Web and data design, followed by web development on a community-driven project that extends my love for bird-watching
+  description: |-
+    <p>A freelance community project to catalogue sightings and photos of birds in my neighbourhood.</p>
+    <p>The site contains:</p>
+    <ul>
+      <li>over 150 bird species and their data
+      <li>over 300 bird photos from several contributors
+      <li>hundreds of logged sightings of birds
+      <li>bounded areas of the various farms and housing estates in the area
+      <li>metadata such as cameras used, EXIFs, bird lists, and geolocation of sightings and photos
+    </ul>
+  observations:
+    - I respect product and web designers a lot more after working on this project; good design is difficult but important work
+    - View Transitions are amazingly simple to implement
+    - It's time to start using an application server like Django or Rails
+    - Custom Sighting and Photo data could be better integrated with SABAP2 formats
+  responsibilities:
+    - Created a photo EXIF-reading tool to generate data stubs, minimising content entry responsibilities
+    - Creating JSON Schemas for data entry, to minimse problems with the YAML data entries
+    - Responsive image generation in AVIF format, falling back to JPEG
+    - Web development with Eleventy
+    - PWA features
+  url: https://ndorfin.github.io/birds-of-zevenwacht/
+  url_label: ndorfin.github.io/birds-of-zevenwacht
+  images:
+    promo: bofz_homepage.png
+    screenshots:
+      - bofz_photos.jpg
+      - bofz_sightings.jpg
 - id: zxsecurity
   title: ZX Security's website
   summary: |-
     Cursory low-level design, content modelling, and development of ZX Security's public-facing website.
   description: |-
-    While working at Ackama, the ideal project happened my way: A Jekyll-driven static site for a great little IT security company.
+    <p>While working at Ackama, the ideal project happened my way: A Jekyll-driven static site for a great little IT security company.</p>
   people:
     - Marc McHardy (Lead Designer)
     - Chris Hails (Content)
@@ -30,7 +62,7 @@
   summary: |-
     Building, documenting and testing UI patterns for Lil Regie so that they can build extensive front-ends.
   description: |-
-    Lil Regie had a design done by Tim James for their new site, and they wanted a CMS-powered website to go with it. So I set about making a pattern library, which we called <i>Lil Regie's Front-end Workshop</i>. The Workshop included a static representation of the homepage, which was later used in their live site.
+    <p>Lil Regie had a design done by Tim James for their new site, and they wanted a CMS-powered website to go with it. So I set about making a pattern library, which we called <i>Lil Regie's Front-end Workshop</i>. The Workshop included a static representation of the homepage, which was later used in their live site.</p>
   people:
     - Tim James (designer)
     - Steve Hoeksema (CTO)
@@ -57,8 +89,8 @@
   summary: |-
     A chance to share what I've learned, and empower those less fortunate than myself.
   description: |-
-    I took on a 9-month contract in the small town of Mahanoro on the east coast of Madagascar, to teach web development (and related disciplines) to 20 Malagasy students, in their second year of becoming web developers.
-    You can read about my experiences with this project on <a href="/blog/2020-01-01/new-beginnings.html">my blog</a>
+    <p>I took on a 9-month contract in the small town of Mahanoro on the east coast of Madagascar, to teach web development (and related disciplines) to 20 Malagasy students, in their second year of becoming web developers.</p>
+    <p>You can read about my experiences with this project on <a href="/blog/2020-01-01/new-beginnings.html">my blog</a></p>
   people:
     - Onja's administration team
     - Loïc Pinois, fellow Front-end development teacher
@@ -82,7 +114,7 @@
   summary: |-
     A bespoke Design System, helping several front-ends stay consistent and reliable.
   description: |-
-    Together with Kah Chan, Sophie Price, Everton Fragoso, and various other friends at Flick, we built a bespoke design system that serves more than 7 front-ends.
+    <p>Together with Kah Chan, Sophie Price, Everton Fragoso, and various other friends at Flick, we built a bespoke design system that serves more than 7 front-ends.</p>
   people:
     - Kah Chan, Product designer
     - Sophie Price, Senior Designer
@@ -99,8 +131,6 @@
     - Rollout of package releases
     - Implementation of releases in the various front-ends
     - Migration of Rails front-ends to support our package releases
-  url: https://design.flick.energy/
-  url_label: design.flick.energy/
   images:
     promo: flick_design_system_opengraph.jpg
     screenshots:
@@ -110,7 +140,7 @@
   summary: |-
     Contract work on one of NZ's biggest Design Systems
   description: |-
-    As one of 7 CSS developers, and countless Angular devs, I helped build out patterns for Trade Me's design system: Tangram.
+    <p>As one of 7 CSS developers, and countless Angular devs, I helped build out patterns for Trade Me's design system: Tangram.</p>
   people:
     - Trade Me's full-time Tangram Developers
     - Trade Me's Product Design team

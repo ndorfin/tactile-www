@@ -13,9 +13,7 @@ permalink: "/work/{{work.id | slug}}/index.html"
 </figure>
 {% endif %}
 
-<p>
-  {{ work.description | safe }}
-</p>
+{{ work.description | safe }}
 
 {% if work.url %}
 <p>
