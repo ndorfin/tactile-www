@@ -1,7 +1,6 @@
 const yaml = require("js-yaml");
-const CleanCSS = require("clean-css");
-const Terser = require("terser");
-const minify = require('html-minifier').minify;
+// const Terser = require("terser");
+// const minify = require('html-minifier-terser').minify;
 
 const MONTHS = [
   "January",
@@ -84,7 +83,13 @@ module.exports = function(eleventyConfig) {
 
   /* Filters */
   eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
+    let minifiedCode = code
+      .replace(/[\n\t]/gi, '')
+      .replace(/\:\s/gi, ':')
+      .replace(/\s\s/gi, '')
+      .replace(/\s\{/gi,'{')
+      .replace(/;\}/gi,'}');
+    return minifiedCode;
   });
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async (code, callback) => {
     try {
@@ -94,13 +99,6 @@ module.exports = function(eleventyConfig) {
       console.error("Error during terser minify:", err);
       return callback(err, code);
     }
-  });
-
-  eleventyConfig.addFilter("htmlmin", function(code) {
-    var result = minify(code, {
-      collapseWhitespace: true
-    });
-    return result;
   });
 
   eleventyConfig.addFilter("postUrl", function(post) {
@@ -149,6 +147,21 @@ module.exports = function(eleventyConfig) {
   /* Copy CSS and JS from the base folder to the `_site` root */
   eleventyConfig.addPassthroughCopy({ "css/**/*": "css" });
   eleventyConfig.addPassthroughCopy({ "js/**/*": "js" });
+
+  // if (process.env.ELEVENTY_RUN_MODE === 'build'){
+	// 	eleventyConfig.addTransform('htmlmin', function (content) {
+	// 		if ((this.page.outputPath || '').endsWith('.html')) {
+	// 			let minified = htmlmin.minify(content, {
+	// 				useShortDoctype: true,
+	// 				removeComments: false,
+	// 				collapseWhitespace: true,
+	// 			});
+	// 			return minified;
+	// 		}
+	// 		// If not an HTML output, return content as-is
+	// 		return content;
+	// 	});
+	// }
 
   return {
     templateFormats: [

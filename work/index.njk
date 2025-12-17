@@ -8,10 +8,16 @@ additional_stylesheets: ['css/work.css']
 <ul class="work_list">
 {% for project in work %}
   <li>
-    <a class="work_item" href="{{project.id}}/" style="--work_image_promo: url('images/{{project.images.promo}}')">
-      <img src="images/{{project.images.promo}}" alt="">
-      <b>{{project.title}}</b>
-      <span>{{project.summary}}</span>
+    <a class="work_item" href="{{project.id}}/">
+      <picture>
+        {% if project.images.promo %}
+        <img src="images/{{project.images.promo}}" alt>
+        {% endif %}
+      </picture>
+      <div>
+        <b>{{project.title}}</b>
+        <span>{{project.summary}}</span>
+      </div>
     </a>
   </li>
 {% endfor %}
