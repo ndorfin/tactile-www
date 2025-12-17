@@ -30,6 +30,39 @@
     screenshots:
       - bofz_photos.jpg
       - bofz_sightings.jpg
+- id: crest
+  title: A UI overhaul of SASTI
+  summary: |-
+    Replacing the UI of an aging Django app for Stellenbosch University's CREST team
+  description: |-
+    <p>
+      SASTI is a decades old web-based analytics app that reports on tertiary education performance in South Africa.
+    </p>
+    <p>
+      Over 5 months, I first started by building a component/pattern library (for the Python developers) based on some previous design work.<br>
+      I then set about replacing the current UI (in DTL) with Jinja2, removing a lot of burdensome JavaScript, and implemented Web Platform tech such as Web Components.
+    </p>
+    <p>
+      I had to learn more Python (and Django) on the job. While I miss Rails' "Convention over Configuration", I enjoyed the openness, community help, and helpful documentation of Django.
+    </p>
+  observations:
+    - Django is a delight to work with
+    - Web Components can help ease a lot of the front-end load for other developers; it's much easier to write HTML than learn a new JavaScript package API.
+    - I wish there was a designer on this project, but we managed to get by.
+    - Working with Web Platform tech meant we didn't need to incorporate Node (and its heavy dependencies) in the Python environment
+  responsibilities:
+    - Switched to Jinja2 for templating
+    - Built and maintained a pattern library, based on previous design work
+    - Implemented a number of Web Components that made the back-end developer's life a lot easier
+    - Refactor Views and View architecture
+  people:
+    - Graeme Mehl (Development lead)
+  # url:
+  # url_label:
+  images:
+    promo: logo_sasti.png
+  #   screenshots:
+  #     -
 - id: zxsecurity
   title: ZX Security's website
   summary: |-
@@ -57,6 +90,39 @@
     promo: zx_security_promo.png
     screenshots:
       - zx_security_screenshot.webp
+- id: yvw
+  title: Yarra Valley Water's website
+  summary: |-
+    A large scale Drupal implementation with bespoke design
+  description: |-
+    <p>
+      While working at Ackama, I was tasked with redoing the front-end of a Drupal app for a Water Utility company called Yarra Valley Water.<br>
+      Suzanne had already done the design work, so it was my turn to implement her work.
+    </p>
+    <p>
+      With some help from my more knowledgable Ackama Drupal colleagues, I then set about replacing the Twig templates, CSS, and supporting content.<br>
+      Most of the content types are modular, so it was a case of working one by one until the pages looked right.
+    </p>
+    <p>
+      As I neared completion, I started testing for regressions, as well as doing an audit of existing vs. new pages, making sure to minimise 404s.
+    </p>
+  people:
+    - Kim Partridge (Project management)
+    - Suzanne Conkas (UX Designer)
+  observations:
+    - I wish I had the time/skills to improve Drupal's front-end performance. All the JavaScript it ships by default, unbundled, is a problem.
+  responsibilities:
+    - Transform design work to front-end code.
+    - Mobile-first reposonsive design implementation
+    - Accessibility concerns
+    - Testing for UI regressions
+    - Documentation
+  url: https://yvw.com.au/
+  url_label: yvw.com.au
+  images:
+    promo: yvw-logo.png
+    screenshots:
+      - yvw-desktop.png
 - id: lilregie
   title: Lil Regie's Workshop & Website
   summary: |-
