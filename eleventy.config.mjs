@@ -1,6 +1,4 @@
-const yaml = require("js-yaml");
-// const Terser = require("terser");
-// const minify = require('html-minifier-terser').minify;
+import yaml from 'js-yaml';
 
 const MONTHS = [
   "January",
@@ -19,11 +17,6 @@ const MONTHS = [
 
 function getISODate(date) {
   return new Date(date).toISOString();
-}
-
-function monthName(date) {
-  let monthIndex = new Date(date).getMonth();
-  return MONTHS[monthIndex];
 }
 
 function getISOMonth(date) {
@@ -52,16 +45,16 @@ function getAllSortedPosts(collection) {
       });
 }
 
-module.exports = function(eleventyConfig) {
+export default function(config) {
 
   /* Data extensions */
-  eleventyConfig.setDataDeepMerge(true);
-  eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
+  config.setDataDeepMerge(true);
+  config.addDataExtension("yaml", contents => yaml.load(contents));
 
   /* Collections */
-  eleventyConfig.addCollection('sortedPosts', getAllSortedPosts);
+  config.addCollection('sortedPosts', getAllSortedPosts);
 
-  eleventyConfig.addCollection('postsGroupedByMonth', function(collection) {
+  config.addCollection('postsGroupedByMonth', function(collection) {
     let groupedPosts = getAllSortedPosts(collection)
       .reduce((groupedPostsArray, item) => {
         let key = getISOMonth(item.data.date);
@@ -82,7 +75,7 @@ module.exports = function(eleventyConfig) {
   });
 
   /* Filters */
-  eleventyConfig.addFilter("cssmin", function(code) {
+  config.addFilter("cssmin", function(code) {
     let minifiedCode = code
       .replace(/[\n\t]/gi, '')
       .replace(/\:\s/gi, ':')
@@ -91,7 +84,7 @@ module.exports = function(eleventyConfig) {
       .replace(/;\}/gi,'}');
     return minifiedCode;
   });
-  eleventyConfig.addNunjucksAsyncFilter("jsmin", async (code, callback) => {
+  config.addNunjucksAsyncFilter("jsmin", async (code, callback) => {
     try {
       const minified = await Terser.minify(code);
       return callback(null, minified.code);
@@ -101,67 +94,54 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  eleventyConfig.addFilter("postUrl", function(post) {
+  config.addFilter("postUrl", function(post) {
     let postDate = getISODate(post.date).substring(0, 10);
     let fileName = `${post.fileSlug}.html`;
     return `/blog/${postDate}/${fileName}`;
   });
 
-  eleventyConfig.addFilter("getYear", function(date) {
+  config.addFilter("getYear", function(date) {
     return new Date(date).getUTCFullYear();
   });
 
-  eleventyConfig.addFilter("ISOMonth", function(date) {
+  config.addFilter("ISOMonth", function(date) {
     return getISODate(date).substring(0,7);
   });
 
-  eleventyConfig.addFilter("dateISO", function(date) {
+  config.addFilter("dateISO", function(date) {
     return getISODate(date);
   });
 
-  eleventyConfig.addFilter("ccyyMMdd", function(date) {
+  config.addFilter("ccyyMMdd", function(date) {
     return getISODate(date).substring(0, 10);
   });
 
-  eleventyConfig.addFilter("day", function(date) {
+  config.addFilter("day", function(date) {
     return new Date(date).getDate();
   });
 
-  eleventyConfig.addFilter("month", function(date) {
-    return monthName(date);
+  config.addFilter("month", function(date) {
+    // Get full month name (e.g., "January")
+    return date.toLocaleString('default', { month: 'long' });
   });
 
-  eleventyConfig.addFilter("mon", function(date) {
-    return monthName(date).substring(0, 3);
+  config.addFilter("mon", function(date) {
+    // Get short month name (e.g., "Jan")
+    return date.toLocaleString('default', { month: 'short' });
   });
 
-  eleventyConfig.addFilter("formattedMonthYear", function(ISOYearMonth) {
+  config.addFilter("formattedMonthYear", function(ISOYearMonth) {
     return getMonthYearStringFromISO(ISOYearMonth);
   });
 
   /* Directives */
 
   /* Copy files in the `_root` folder to the `_site` root */
-  eleventyConfig.addPassthroughCopy({ "_root/*": "/" });
+  config.addPassthroughCopy({ "_root/*": "/" });
 
   /* Copy CSS and JS from the base folder to the `_site` root */
-  eleventyConfig.addPassthroughCopy({ "css/**/*": "css" });
-  eleventyConfig.addPassthroughCopy({ "js/**/*": "js" });
-
-  // if (process.env.ELEVENTY_RUN_MODE === 'build'){
-	// 	eleventyConfig.addTransform('htmlmin', function (content) {
-	// 		if ((this.page.outputPath || '').endsWith('.html')) {
-	// 			let minified = htmlmin.minify(content, {
-	// 				useShortDoctype: true,
-	// 				removeComments: false,
-	// 				collapseWhitespace: true,
-	// 			});
-	// 			return minified;
-	// 		}
-	// 		// If not an HTML output, return content as-is
-	// 		return content;
-	// 	});
-	// }
+  config.addPassthroughCopy({ "css/**/*": "css" });
+  config.addPassthroughCopy({ "js/**/*": "js" });
 
   return {
     templateFormats: [
