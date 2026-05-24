@@ -13,7 +13,8 @@ An [Eleventy](https://11ty.dev) container and blog to act as my personal website
 
 ## Requirements
 
-- Node.js
+- Node.js (^24.16.0)
+- npm (^11.15.0)
 - Your favourite browser
 
 ## Install

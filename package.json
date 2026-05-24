@@ -1,15 +1,13 @@
 {
   "name": "tactile-www",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Blog container and builder for tactile.co.za",
   "author": "Shaun O'Connell <shaun@tactile.co.za>",
   "license": "ISC",
   "repository": "https://github.com/ndorfin/tactile-www",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "http-proxy": "^1.18.1",
-    "js-yaml": "^4.1.0",
-    "lodash": "^4.17.21"
+    "@11ty/eleventy": "^3.1.5",
+    "js-yaml": "^4.1.1"
   },
   "scripts": {
     "start": "npm run serve",
