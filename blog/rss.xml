@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in web development</description>
-    <lastBuildDate>Sun, 24 May 2026 13:23:04 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 18:39:44 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>Return to the wild</title>
+      <link>https://tactile.co.za/blog/2026-08-03/return-to-the-wild.html </link>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-08-03/return-to-the-wild.html</guid>
+      <description><![CDATA[Changing tack completely, and immersing myself in nature]]></description>
+    </item>
     <item>
       <title>Precipice</title>
       <link>https://tactile.co.za/blog/2023-11-02/precipice.html </link>
