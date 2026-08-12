@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in web development</description>
-    <lastBuildDate>Sun, 09 Aug 2026 12:47:47 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 11:03:06 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>A much-needed rest day</title>
+      <link>https://tactile.co.za/blog/2026-08-12/a-much-needed-rest-day.html </link>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-08-12/a-much-needed-rest-day.html</guid>
+      <description><![CDATA[The schedule and routine has been intense!]]></description>
+    </item>
     <item>
       <title>Starting a month in Mashatu</title>
       <link>https://tactile.co.za/blog/2026-08-09/starting-a-month-in-mashatu.html </link>
