@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in web development</description>
-    <lastBuildDate>Tue, 18 Aug 2026 18:17:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 18:43:47 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>A fortnight review</title>
+      <link>https://tactile.co.za/blog/2026-08-24/a-fortnight-review.html </link>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-08-24/a-fortnight-review.html</guid>
+      <description><![CDATA[What's been happening over the last 12 days]]></description>
+    </item>
     <item>
       <title>Full day activity</title>
       <link>https://tactile.co.za/blog/2026-08-18/full-day-activity.html </link>
