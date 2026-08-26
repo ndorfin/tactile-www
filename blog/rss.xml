@@ -4,12 +4,19 @@
     <title>Tactile blog</title>
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
-    <description>Follow Shaun O'Connell's adventures in web development</description>
-    <lastBuildDate>Mon, 24 Aug 2026 18:43:47 GMT</lastBuildDate>
+    <description>Follow Shaun O'Connell's adventures in web development, field guiding, and birds.</description>
+    <lastBuildDate>Wed, 26 Aug 2026 16:29:18 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>The night under the moon</title>
+      <link>https://tactile.co.za/blog/2026-08-26/the-night-under-the-moon.html </link>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-08-26/the-night-under-the-moon.html</guid>
+      <description><![CDATA[Sleeping under the hiding stars]]></description>
+    </item>
     <item>
       <title>A fortnight review</title>
       <link>https://tactile.co.za/blog/2026-08-24/a-fortnight-review.html </link>
