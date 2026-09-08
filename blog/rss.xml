@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in web development, field guiding, and birds.</description>
-    <lastBuildDate>Sat, 05 Sep 2026 03:47:32 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 03:37:01 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>Reality check</title>
+      <link>https://tactile.co.za/blog/2026-09-07/reality-check.html </link>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-09-07/reality-check.html</guid>
+      <description><![CDATA[Trying to see the wood for the trees]]></description>
+    </item>
     <item>
       <title>Goodbye Mashatu, Hello Timbavati</title>
       <link>https://tactile.co.za/blog/2026-09-04/goodbye-mashatu.html </link>
