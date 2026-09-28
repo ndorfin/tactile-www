@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in web development, field guiding, and birds.</description>
-    <lastBuildDate>Thu, 24 Sep 2026 13:50:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 08:46:45 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>Birding Bonanza</title>
+      <link>https://tactile.co.za/blog/2026-09-27/birding-bonanza.html </link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-09-27/birding-bonanza.html</guid>
+      <description><![CDATA[A morning dedicated to birding]]></description>
+    </item>
     <item>
       <title>Exam time and the wild hunt</title>
       <link>https://tactile.co.za/blog/2026-09-24/exam-time.html </link>
