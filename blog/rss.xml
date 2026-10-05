@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in web development, field guiding, and birds.</description>
-    <lastBuildDate>Mon, 28 Sep 2026 13:45:48 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 09:09:30 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>A brief respite</title>
+      <link>https://tactile.co.za/blog/2026-10-05/a-brief-respite.html </link>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-10-05/a-brief-respite.html</guid>
+      <description><![CDATA[NQF2 done and dusted]]></description>
+    </item>
     <item>
       <title>Theory exams over</title>
       <link>https://tactile.co.za/blog/2026-09-28/theory-exams-over.html </link>
