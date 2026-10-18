@@ -5,11 +5,25 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in web development, field guiding, and birds.</description>
-    <lastBuildDate>Mon, 05 Oct 2026 09:09:30 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 09:49:12 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>Birding</title>
+      <link>https://tactile.co.za/blog/2026-10-18/basic-birding.html </link>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-10-18/basic-birding.html</guid>
+      <description><![CDATA[Almost done with the Basic Birding course at EcoTraining]]></description>
+    </item>
+    <item>
+      <title>Bird Ringing in the Cape Flats</title>
+      <link>https://tactile.co.za/blog/2026-10-10/bird-ringing-in-the-cape-flats.html </link>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-10-10/bird-ringing-in-the-cape-flats.html</guid>
+      <description><![CDATA[A morning out catching and ringing wild birds in the Cape Flats Nature Reserve]]></description>
+    </item>
     <item>
       <title>A brief respite</title>
       <link>https://tactile.co.za/blog/2026-10-05/a-brief-respite.html </link>
