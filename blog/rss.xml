@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in web development, field guiding, and birds.</description>
-    <lastBuildDate>Tue, 20 Oct 2026 14:33:19 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 12:42:36 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>Tracking doldrums &amp; Internships</title>
+      <link>https://tactile.co.za/blog/2026-10-24/tracking-doldrums.html </link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-10-24/tracking-doldrums.html</guid>
+      <description><![CDATA[Sweltering heat and the still seas of identifying tracks]]></description>
+    </item>
     <item>
       <title>Birding</title>
       <link>https://tactile.co.za/blog/2026-10-18/basic-birding.html </link>
