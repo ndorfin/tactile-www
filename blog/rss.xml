@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in web development, field guiding, and birds.</description>
-    <lastBuildDate>Sat, 24 Oct 2026 12:42:36 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 10:59:48 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>Trails and tracking</title>
+      <link>https://tactile.co.za/blog/2026-10-30/trails-and-tracking.html </link>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-10-30/trails-and-tracking.html</guid>
+      <description><![CDATA[It feels good to be out in the bush again]]></description>
+    </item>
     <item>
       <title>Tracking doldrums &amp; Internships</title>
       <link>https://tactile.co.za/blog/2026-10-24/tracking-doldrums.html </link>
