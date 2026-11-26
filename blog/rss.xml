@@ -5,11 +5,18 @@
     <atom:link href="https://tactile.co.za/blog/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://tactile.co.za/blog/</link>
     <description>Follow Shaun O'Connell's adventures in web development, field guiding, and birds.</description>
-    <lastBuildDate>Mon, 02 Nov 2026 07:02:13 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 12:51:50 GMT</lastBuildDate>
     <language>en-NZ</language>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>@11ty/Eleventy + VS Code</generator>
+    <item>
+      <title>Advanced Rifle Handling</title>
+      <link>https://tactile.co.za/blog/2026-11-08/advanced-rifle-handling.html </link>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://tactile.co.za/blog/2026-11-08/advanced-rifle-handling.html</guid>
+      <description><![CDATA[Sweating, aiming, drilling, and shooting]]></description>
+    </item>
     <item>
       <title>On to Makuleke</title>
       <link>https://tactile.co.za/blog/2026-11-02/on-to-makuleke.html </link>
